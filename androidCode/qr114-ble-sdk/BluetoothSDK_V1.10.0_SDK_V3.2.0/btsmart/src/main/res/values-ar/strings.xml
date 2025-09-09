@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <!--Common-->
+    <string name="app_name">QR 114</string>
+    <string name="more">المزيد</string>
+    <string name="allow">السماح</string>
+    <string name="ban">عدم الإظهار مرة أخرى</string>
+    <string name="finish">إنهاء</string>
+    <string name="it_is_ok">موافق!</string>
+    <string name="i_known">مفهوم!</string>
+    <string name="app_is_running">التطبيق قيد التشغيل.</string>
+    <string name="none_data">لا توجد بيانات</string>
+    <string name="close">إغلاق</string>
+    <string name="no_data">لم يتم العثور على محتوى</string>
+    <!-- <string name="start_using">Start using</string>-->
+
+    <string name="email_hint_msg">أدخل عنوان بريد إلكتروني صالح</string>
+    <string name="patent_text">براءة اختراع الجهاز قيد الانتظار xxxxxxxxxxxxxxxx</string>
+    <string name="copyright_text">© 2025 RHKCL</string>
+    <string name="repassword_hint">إعادة إدخال كلمة المرور</string>
+    <string name="forgot_password_hint_msg">هل نسيت كلمة المرور؟</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="back_to_login">العودة إلى تسجيل الدخول</string>
+    <string name="contact_upport">اتصل بالدعم</string>
+    <string name="reset_password_subtitle">أدخل بياناتك لإعادة تعيين كلمة المرور</string>
+
+
+    <string name="back">رجوع</string>
+    <string name="cancel">إلغاء</string>
+    <string name="confirm">تأكيد</string>
+    <string name="double_tap_to_exit">اضغط مرة أخرى للخروج</string>
+    <string name="exit">خروج</string>
+    <string name="mobile_network_tip">يتم استخدام شبكة الهاتف المحمول</string>
+    <string name="network_error_tip">يبدو أن هناك خطأ ما في الشبكة. يرجى التحقق من الشبكة</string>
+    <string name="none_network_tip">الشبكة غير متصلة، يرجى فتح الشبكة</string>
+    <string name="ok">نعم</string>
+    <string name="tips">نصيحة</string>
+    <string name="to_setting">الذهاب إلى الإعدادات</string>
+    <style name="Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <string name="qr114" translatable="false">QR 114</string>
+    <string name="new_version_available" >إصدار جديد متوفر</string>
+    <string name="update_file_ready" translatable="false">ملف التحديث جاهز</string>
+    <string name="download_completed" translatable="false">اكتمل التنزيل</string>
+
+    <!-- Log In Screen -->
+ <string name="login_title" >تسجيل الدخول</string>
+    <string name="login_subtitle" >أدخل البريد الإلكتروني وكلمة المرور \nلتسجيل الدخول</string>
+    <string name="login_button" >تسجيل الدخول</string>
+    <string name="login_nav_to_signup" >ليس لديك حساب؟ <b>إنشاء حساب</b></string>
+   <string name="password_hint_msg">يجب أن تتكون كلمة المرور من 8 أحرف على الأقل</string>
+
+   <!-- Sign Up / Registration Screen -->
+    <string name="signup_title" >تسجيل المنتج</string>
+    <string name="signup_subtitle" >أدخل الرقم التسلسلي والبريد الإلكتروني وكلمة المرور لإكمال الإعداد. يجب أن تتكون كلمة المرور من 8 أحرف على الأقل</string>
+    <string name="serial_number_hint" translatable="false">الرقم التسلسلي</string>
+    <string name="email_hint" translatable="false">البريد الإلكتروني</string>
+    <string name="password_hint" translatable="false">كلمة المرور</string>
+    <string name="register_button" translatable="false">تسجيل</string>
+    <string name="signup_nav_to_login" translatable="false"><b>هل لديك حساب بالفعل؟</b></string>
+    <string name="terms_and_conditions" translatable="false">بالمتابعة، أؤكد أنني قرأت ووافقت على <b>شروط الترخيص والأحكام</b>، و<b>سياسة الخصوصية</b> لشركة RigidMeds Canada INC.</string>
+
+    <!--Network-->
+    <string name="no_network">لا يوجد اتصال بالشبكة، يرجى التحقق من شبكتك</string>
+    <string name="network_exception">خطأ في الشبكة</string>
+    <string name="network_exception_tips">يرجى التحقق من اتصال الشبكة والمحاولة مرة أخرى</string>
+
+    <!--Permission-->
+    <string name="open_gpg_tip">إذن GPS مطلوب، يرجى السماح بالوصول إلى خدمة الموقع</string>
+    <string name="permissions_tips_01">لاستخدام هذا التطبيق بشكل طبيعي، يرجى</string>
+    <string name="permission_contacts">السماح بقراءة وكتابة جهات الاتصال</string>
+    <string name="permission_mic">السماح بالوصول إلى الميكروفون</string>
+    <string name="permission_read_phone_state">السماح بالوصول إلى معلومات الهاتف</string>
+    <string name="permission_location">السماح بالوصول إلى الموقع</string>
+    <string name="permission_storage">السماح بقراءة وكتابة الملفات</string>
+    <string name="permission_bluetooth">السماح بالوصول إلى البلوتوث</string>
+    <string name="permission_phone_settings">السماح بتغيير إعدادات الهاتف</string>
+    <string name="permissions_tips_02">يرجى فتح إعدادات النظام ومنح هذا التطبيق</string>
+    <string name="permission">الإذن</string>
+
+    <!--Device state-->
+    <string name="first_connect_device">يرجى توصيل الجهاز أولاً</string>
+    <string name="unconnected_device">لا يوجد جهاز متصل</string>
+    <string name="unconnected_device_tips">لا يوجد جهاز متصل، يرجى توصيل أو إضافة جهاز أولاً</string>
+    <string name="connectable_devies">أجهزة متاحة للاتصال</string>
+    <string name="disconnect_device">فصل الجهاز</string>
+
+    <string name="msg_read_file_err_reading">الجهاز مشغول، يرجى المحاولة مرة أخرى</string>
+    <string name="msg_read_file_err_offline">الجهاز غير متصل</string>
+    <string name="msg_call_tip">جارٍ الاتصال...</string>
+    <string name="no_support_reverberation">الصدى غير مدعوم على الجهاز الحالي</string>
+
+    <string name="bt_connecting">جارٍ الاتصال</string>
+    <string name="device_status_unconnected">غير متصل</string>
+    <string name="device_status_connected">متصل</string>
+    <string name="device_status_using">قيد الاستخدام حاليًا</string>
+    <string name="device_status_mandatory_upgrade">التحديث مطلوب</string>
+    <string name="connect_device">توصيل جهاز</string>
+    <string name="connect_tip">اتصال</string>
+    <string name="device_connecting">جارٍ الاتصال...</string>
+    <string name="bt_connect_failed">فشل الاتصال</string>
+    <string name="device_status_reconnect">جارٍ إعادة الاتصال</string>
+
+    <!--LauncherActivity-->
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="user_agreement">اتفاقية المستخدم</string>
+    <string name="agree_with">أوافق على</string>
+    <string name="dialog_tips">تذكير</string>
+    <string name="user_service_tips">مرحبًا بك في استخدام تطبيق %1$s. عند استخدامه، ستحتاج إلى الاتصال بشبكة البيانات أو مشغل WLAN. يرجى استشارة المشغل المحلي لمعرفة تكلفة البيانات. نحن نولي أهمية كبيرة لحماية خصوصيتك ومعلوماتك الشخصية.</string>
+    <string name="user_service_tips2">يرجى قراءة "اتفاقية المستخدم" و "سياسة الخصوصية" بعناية قبل استخدام تطبيق %1$s. يمكنك استخدام خدمتنا بعد الموافقة على جميع الشروط وقبولها.</string>
+    <string name="privacy_policy_name">"سياسة الخصوصية"</string>
+    <string name="user_service_name">"اتفاقية المستخدم"</string>
+    <string name="and">و</string>
+    <string name="agree_and_use">موافقة ومتابعة</string>
+    <string name="not_agree_and_exit">رفض والخروج</string>
+
+    <!--HomeActivity-->
+    <string name="tab_multimedia">الوسائط</string>
+    <string name="tab_home">الرئيسية</string>
+    <string name="tab_logout">تسجيل الخروج</string>
+
+    <string name="tab_eq">المعادل</string>
+    <string name="tab_device">الجهاز</string>
+    <string name="switch_classic_device_tips">جهاز إخراج مصدر الصوت الحالي [%1$s] غير متوافق مع الجهاز [%2$s] المستخدم. يرجى تبديل الإخراج إلى [%3$s] لضمان تجربة المستخدم</string>
+    <string name="add_device">إضافة جهاز جديد</string>
+    <string name="confirm_text">تأكيد</string>
+    <string name="cancel_text">إلغاء</string>
+
+ <string name="current_password">كلمة المرور الحالية</string>
+ <string name="new_password">كلمة المرور الجديدة</string>
+ <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+ <string name="update_password">تحديث كلمة المرور</string>
+ <string name="profile">الملف الشخصي</string>
+ <string name="change_password">تغيير كلمة المرور</string>
+ <string name="rename_device">إعادة تسمية الجهاز</string>
+ <string name="delete_device">حذف الجهاز</string>
+ <string name="change_name_guide_text">استخدم: حروف (A-Z)، أرقام (0-9)، مسافات، - _ . ()، تجنب: المسافات، الرموز الخاصة</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="home">الرئيسية</string>
+
+
+    <!--DeviceFragment-->
+    <string name="my_devices">أجهزتي</string>
+    <string name="pack_up">معلومات أقل</string>
+    <string name="device_connecting_tips">جارٍ الاتصال، يرجى الانتظار...</string>
+    <string name="bluetooth_not_enable">البلوتوث مغلق</string>
+    <string name="connect_device_over_limit">تم الوصول إلى الحد الأقصى لأجهزة البلوتوث، يرجى فصل الأجهزة غير المرغوب فيها من إعدادات النظام</string>
+    <string name="background_show_activity_failed_tips">تم رفض إذن نشاط الخلفية (نافذة منبثقة)، يرجى منح الإذن</string>
+    <string name="switch_device_tips">تم تبديل الجهاز بنجاح.</string>
+    <string name="device_not_using">هذا الجهاز غير مستخدم حاليًا</string>
+    <string name="device_charging_bin">%1$s علبة الشحن</string>
+    <string name="connect_history_failed_tips">لم يتم العثور على الجهاز: [%1$s]</string>
+
+    <!--Multi media-->
+    <string name="multi_media_local">وسائط محلية</string>
+    <string name="multi_media_usb_drive">محرك أقراص USB</string>
+    <string name="multi_media_sd_card">بطاقة SD</string>
+    <string name="multi_media_fm_launch">مرسل FM</string>
+    <string name="multi_media_fm_receive">مستقبل FM</string>
+    <string name="multi_media_line_in">AUX</string>
+    <string name="multi_media_light_settings">تأثيرات الإضاءة</string>
+    <string name="multi_media_alarm">المنبه</string>
+    <string name="multi_media_search_device">البحث عن أجهزتي</string>
+    <string name="multi_media_net_radio">راديو الإنترنت</string>
+    <string name="multi_media_sound_card">كاريوكي</string>
+
+    <!--Local music-->
+    <string name="none_music_data">لم يتم العثور على ملفات موسيقى، يرجى إضافة موسيقى</string>
+    <string name="song_list_top_all_song">كل الموسيقى</string>
+    <string name="song_list_top_song_num">(إجمالي %1$d أغنية)</string>
+    <string name="current_version">الإصدار الحالي</string>
+    <string name="local_music_none">لم يتم العثور على ملفات موسيقى محلية</string>
+
+    <!--Device Music-->
+    <string name="back_to_root">أنت الآن في الدليل الجذر</string>
+    <string name="device_music">الموسيقى في الجهاز</string>
+    <string name="switch_mode_success">تم التبديل إلى وضع %1$s</string>
+    <string name="msg_read_file_err_beyond_max_depth">تم تجاوز العمق القابل للقراءة</string>
+    <string name="sd_card">بطاقة SD</string>
+    <string name="udisk">محرك أقراص USB</string>
+
+    <!--ID3 Music-->
+    <string name="none_id3_music_data">فشل في الحصول على معلومات ID3</string>
+    <string name="other_music_player">(من تطبيق مشغل موسيقى آخر)</string>
+
+    <!--FM Feature-->
+    <string name="search_forward">بحث للأمام</string>
+    <string name="search_all">بحث عن الكل</string>
+    <string name="search_backward">بحث للخلف</string>
+    <string name="freq_point_collect">حفظ القناة</string>
+    <string name="freq_point_manage">إدارة القناة</string>
+    <string name="net_radio">راديو الإنترنت</string>
+    <string name="freq_point_collect_success">تم حفظ القناة</string>
+    <string name="freq_point_collect_existed">تم الحفظ</string>
+    <string name="freq_point">التردد</string>
+    <string name="searching">جارٍ البحث عن قنوات...</string>
+    <string name="fm_value_no_change">تردد FM لم يتغير</string>
+    <string name="fm_range">نطاق التردد 87.5 ~ 108.0 ميجاهرتز</string>
+    <string name="fm_only_one_decimal">التردد دقيق لمنزلة عشرية واحدة</string>
+    <string name="fm_no_decimal">فارغ في المنزلة العشرية</string>
+
+    <!--Device Setting-->
+    <string name="setting">الإعدادات</string>
+    <string name="named">الاسم</string>
+    <string name="device_name_over_limit">اسم الجهاز طويل جدًا، الحد الأقصى هو %1$d حرفًا</string>
+    <string name="not_support_tips">الميزة غير مدعومة بعد</string>
+    <string name="tip_empty_device_name">يجب ألا يكون الاسم فارغًا</string>
+    <string name="tip_same_device_name">اسم الجهاز لم يتغير</string>
+    <string name="require_tws_info_error">فشل في الحصول على معلومات الجهاز، انقر للحصول عليها مرة أخرى</string>
+    <string name="retrieved">تم الاسترداد</string>
+
+    <!--OTA function-->
+    <string name="firmware_current_version">الإصدار الحالي</string>
+    <string name="found_new_version">تم العثور على تحديث للبرنامج الثابت: %1$s</string>
+    <string name="new_version">تحديث جديد للبرنامج الثابت: %1$s</string>
+    <string name="download_tips">جارٍ التنزيل</string>
+    <string name="upgrade_tips">جارٍ تحديث البرنامج الثابت</string>
+    <string name="upgrading_tips">جارٍ التحديث</string>
+    <string name="upgrade_progress_prepare">التحديث جاهز %1$s</string>
+    <string name="upgrade_progress_update">جارٍ التحديث %1$s</string>
+    <string name="upgrade_warning">جارٍ تحديث البرنامج الثابت، يرجى الحفاظ على اتصال البلوتوث والشبكة، لا تقم بإيقاف تشغيل جهاز البلوتوث أو قفل الشاشة</string>
+    <string name="upgrade_success">اكتمل التحديث</string>
+    <string name="upgrade_failed">فشل التحديث</string>
+    <string name="upgrade_cancel">تم إلغاء التحديث</string>
+    <string name="device_must_mandatory_upgrade">يتطلب الجهاز (%1$s) تحديثًا كاملاً عبر الهواء (OTA) للاستخدام السليم.</string>
+    <string name="network_err_tips">فشل الاتصال بالخادم، يرجى التحقق من الشبكة.</string>
+    <string name="double_click_to_disconnect">النقر المزدوج على زر الرجوع سيفصل الجهاز.</string>
+    <string name="upgrade_immediately">التحديث الآن</string>
+
+    <!--OTA error tips-->
+    <string name="ota_error_msg_receive_cmd_timeout">مهلة استلام الأمر</string>
+    <string name="ota_error_msg_device_disconnected">تم فصل البلوتوث</string>
+    <string name="ota_error_msg_error_param">خطأ في المعلمة</string>
+    <string name="ota_error_msg_param_null">المعلمة فارغة</string>
+    <string name="ota_error_msg_file_not_found">لم يتم العثور على الملف</string>
+    <string name="ota_error_msg_file_read_fail">فشل في قراءة الملف</string>
+    <string name="ota_error_msg_file_not_exist">الملف غير موجود</string>
+    <string name="ota_error_msg_bluetooth_not_connected">تم فصل البلوتوث</string>
+    <string name="ota_error_msg_no_update_version">لم يتم العثور على تحديث</string>
+    <string name="ota_error_msg_ota_is_continuing">التحديث عبر الهواء قيد التقدم، يرجى عدم القيام بأي عملية</string>
+    <string name="ota_error_msg_device_not_connected">تم فصل الجهاز</string>
+    <string name="ota_error_msg_response_empty">الرد فارغ</string>
+    <string name="ota_error_msg_data_length_error">خطأ: طول البيانات</string>
+    <string name="ota_error_msg_response_status_error">رد الجهاز بحالة سيئة: </string>
+    <string name="ota_error_msg_low_equipmeent">بطارية الجهاز منخفضة جدًا</string>
+    <string name="ota_error_msg_check_upgrade_file_failed">خطأ: فشل التحقق من صحة ملف OTA</string>
+    <string name="ota_error_msg_upgrade_file_version_no_change">الإصدار لم يتغير</string>
+    <string name="ota_error_msg_tws_is_not_connected">سماعات الأذن TWS غير متصلة</string>
+    <string name="ota_error_msg_headset_not_in_charging">سماعات الأذن ليست في العلبة</string>
+    <string name="ota_error_msg_enter_update_mode_failed">خطأ: فشل الجهاز في الدخول إلى وضع التحديث</string>
+    <string name="ota_error_msg_offest_over_limit">تجاوز الإزاحة للحد</string>
+    <string name="ota_error_msg_receive_error_data">فشل التحقق من صحة البيانات</string>
+    <string name="ota_error_msg_upgrade_failed">فشل التحديث</string>
+    <string name="ota_error_msg_key_not_match">خطأ: فشل التحقق من المفتاح</string>
+    <string name="ota_error_msg_check_file_error">خطأ: فشل التحقق من البيانات</string>
+    <string name="ota_error_msg_type_not_match">خطأ: نوع التحديث غير متطابق</string>
+    <string name="ota_error_msg_flash_read_error">خطأ: فشل قراءة/كتابة ذاكرة الجهاز</string>
+    <string name="ota_error_msg_handler_cmd_timeout">خطأ: مهلة معالجة الأمر من الجهاز</string>
+    <string name="ota_error_msg_error_unkonwn">خطأ: خطأ غير معروف</string>
+    <string name="ota_error_msg_download_ota_file_failed">خطأ: فشل تنزيل البرنامج الثابت للتحديث، الرسالة:</string>
+    <string name="ota_error_msg_request_ota_file_failed">خطأ: فشل طلب معلومات ملف البرنامج الثابت للتحديث، الرسالة:</string>
+    <string name="ota_error_msg_disconnect_tip">التحديث قيد التقدم، يرجى عدم قطع اتصال البلوتوث</string>
+
+    <!--Product Design Dialog-->
+    <!--   <string name="device_paired_finish">Completed</string>-->
+    <string name="device_auto_connecting">الجهاز يعيد الاتصال تلقائيًا</string>
+    <string name="device_connectionless_tips">يرجى وضع الجهاز في وضع الاقتران</string>
+    <string name="request_floating_window_permission_tips">لتجربة مستخدم أفضل، يرجى منح إذن "التراكب فوق الشاشة"</string>
+    <string name="scanning_ble_device">جارٍ البحث عن أجهزة...</string>
+    <string name="device_review">عرض الأجهزة</string>
+    <string name="disconnect_device_tips">هل تؤكد فصل الجهاز؟</string>
+    <string name="bt_connected_error_tip">[%1$s] يتصل بجهاز آخر</string>
+    <string name="device_not_owner">هذا ليس جهازك</string>
+    <string name="long_click_cancel_pair">يرجى الضغط لفترة طويلة على زر علبة الشحن للاتصال</string>
+    <string name="make_sure_headset_paired">يرجى التأكد من أن سماعات الأذن/الرأس في وضع الاقتران</string>
+    <string name="long_click_cancel_pair_soundbox">يرجى الضغط لفترة طويلة على زر الطاقة للاتصال</string>
+    <string name="make_sure_soundbox_paired">يرجى التأكد من أن الجهاز في وضع الاقتران</string>
+
+    <!--History Device-->
+    <string name="remove_history_device_failed">فشل تجاهل الجهاز</string>
+
+    <!--EQ function-->
+    <string name="eq_normal">عادي</string>
+    <string name="eq_rock">روك</string>
+    <string name="eq_pop">بوب</string>
+    <string name="eq_classical">كلاسيكي</string>
+    <string name="eq_jazz">جاز</string>
+    <string name="eq_country">كنتري</string>
+    <string name="eq_user">تخصيص</string>
+    <string name="eq_advanced_setting">إعداد متقدم</string>
+    <string name="eq_advanced_reverberation">صدى</string>
+    <string name="eq_advanced_dynamic">DRC</string>
+    <string name="eq_advanced_depth">عمق</string>
+    <string name="eq_advanced_strength">كسب</string>
+    <string name="current_volume">مستوى الصوت الحالي:</string>
+
+    <string name="eq_freq_16k">16k</string>
+    <string name="eq_freq_8k">8k</string>
+    <string name="eq_freq_4k">4k</string>
+    <string name="eq_freq_2k">2k</string>
+    <string name="eq_freq_1k">1k</string>
+    <string name="eq_freq_500">500</string>
+    <string name="eq_freq_250">250</string>
+    <string name="eq_freq_125">125</string>
+    <string name="eq_freq_63">63</string>
+    <string name="eq_freq_31">31</string>
+    <string name="eq_freq_12db">+8dB</string>
+    <string name="eq_freq_0db">0dB</string>
+    <string name="eq_freq_negative_12db">-8dB</string>
+    <string name="music_time_default">00:00</string>
+    <string name="product_default_quantity">100%</string>
+
+    <string name="volume_bass">الجهير (Bass)</string>
+    <string name="volume_main">الصوت الرئيسي</string>
+    <string name="volume_height">الصوت العالي (Treble)</string>
+    <string name="eq_reset">إعادة تعيين</string>
+    <string name="eq_preset">إعداد مسبق</string>
+
+    <!--App Settings-->
+    <string name="shake_cut_song">هز للانتقال إلى الأغنية التالية</string>
+    <string name="shake_change_light_color">هز لتغيير لون الإضاءة</string>
+    <string name="shake_change_light_color_note">يجب أن يدعم الجهاز إعداد الإضاءة</string>
+    <string name="about">حول</string>
+    <string name="feedback">الملاحظات</string>
+    <string name="device_instructions">تعليمات استخدام الجهاز</string>
+    <string name="multilingual">اللغات</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="follow_system">استخدام لغة النظام الافتراضية</string>
+    <string name="english">English</string>
+    //sasa edit
+
+    <string name="indonesian" translatable="false">الإندونيسية</string>
+    <string name="turkish" translatable="false">التركية</string>
+    <string name="malay" translatable="false">الماليزية</string>
+    <string name="arabic" translatable="false">العربية</string>
+
+
+    <string name="japanese">日本語</string>
+    <string name="set_language">إعداد اللغة</string>
+
+    <!--About-->
+    <string name="app_version_name">إصدار البرنامج: %1$s</string>
+    <string name="app_version">إصدار التطبيق: %1$s</string>
+    <string name="firmware_version_name">إصدار البرنامج الثابت: %1$s</string>
+    <string name="check_update">التحقق من وجود تحديثات</string>
+    <string name="firmware_update">تحديث البرنامج الثابت</string>
+    <string name="laster_version">يتم استخدام أحدث إصدار</string>
+
+    <!--Device Function Settings-->
+    <string name="boot_up">تشغيل</string>
+    <string name="shut_down">إيقاف التشغيل</string>
+    <string name="music_pp">تشغيل/إيقاف مؤقت</string>
+    <string name="previous_song">السابق</string>
+    <string name="next_song">التالي</string>
+    <string name="voice_inc">رفع الصوت</string>
+    <string name="voice_dec">خفض الصوت</string>
+    <string name="call_back">الاتصال بآخر رقم</string>
+    <string name="hang_up">إنهاء المكالمة</string>
+    <string name="answer_call">الرد على المكالمة</string>
+    <string name="ai_speech">تفعيل الأمر الصوتي</string>
+    <string name="take_photo">التقاط صورة</string>
+    <string name="none">لا شيء</string>
+    <string name="bluetooth_name">اسم البلوتوث</string>
+    <string name="work_mode">وضع العمل</string>
+    <string name="mic_channel">الميكروفون</string>
+    <string name="led_settings">إعدادات LED</string>
+    <string name="in_ear_check">اكتشاف الارتداء</string>
+    <string name="settings_failed">فشل تغيير الإعداد</string>
+    <string name="settings_failed_by_game_mode">تم تعطيل التحكم في الميكروفون في وضع الألعاب</string>
+    <string name="settings_failed_dev_name_len_over_limit">اسم غير صالح أو الطول يتجاوز الحد المسموح به</string>
+    <string name="settings_failed_led_settings">تم تعطيل وميض LED في وضع غير البلوتوث</string>
+    <string name="device_name_change_tips">هذا التعديل يتطلب إعادة تشغيل الجهاز، هل تريد إعادة التشغيل الآن؟</string>
+    <string name="device_name_failure">فشل تغيير اسم الجهاز</string>
+    <string name="not_immediately_effective">سيتم تطبيق التغييرات بعد إعادة التشغيل</string>
+    <string name="immediately_effective">تطبيق الآن</string>
+    <string name="not_allow_settings_tip">لا يُسمح بضبط الجهاز. يرجى التأكد مما إذا كان الاتصال مقترنًا أم لا.</string>
+    <string name="remove_history_device_tips">هل تؤكد تجاهل هذا الجهاز؟</string>
+    <string name="remove_history_device">تجاهل هذا الجهاز</string>
+    <string name="modify_dev_name_tips">(يرجى إعادة توصيل الجهاز إذا كان اسم الجهاز المعروض غير صحيح)</string>
+
+    <string name="noise_control">إعدادات إلغاء الضوضاء (ANC)</string>
+    <string name="noise_mode_denoise">تشغيل ANC</string>
+    <string name="noise_mode_close">إيقاف ANC</string>
+    <string name="noise_mode_transparent">وضع الشفافية</string>
+    <string name="save">حفظ</string>
+    <string name="noise_mode_desc_close">تعطيل إلغاء الضوضاء</string>
+    <string name="noise_mode_desc_denoise">ضغط الصوت المحيط</string>
+    <string name="noise_mode_desc_transparent">تمرير الصوت المحيط</string>
+    <string name="enable">تفعيل</string>
+    <string name="input_valid_value_tips">يرجى إدخال قيمة صالحة بين [%1$d,%2$d]</string>
+    <string name="left_dev_denoise_value">كسب ANC للجانب الأيسر</string>
+    <string name="right_dev_denoise_value">كسب ANC للجانب الأيمن</string>
+    <string name="left_dev_transparent_value">كسب الشفافية للجانب الأيسر</string>
+    <string name="right_dev_transparent_value">مستوى/كسب الشفافية للجانب الأيمن</string>
+    <string name="invalid_mode">وضع غير صالح</string>
+    <string name="unknown_mode">وضع غير معروف</string>
+    <string name="denoise_value">كسب ANC</string>
+    <string name="transparent_value">كسب الشفافية</string>
+    <string name="maximum_tips">تم الوصول إلى الحد الأقصى</string>
+
+    <!--Adaptive ANC-->
+    <string name="adaptive_anc">إلغاء الضوضاء التكيفي (ANC)</string>
+    <string name="adaptive_anc_desc">قم بتشغيل خوارزمية ANC التكيفية للتعويض عن الاختلافات في قناة الأذن والارتداء، وتحسين أداء تقليل الضوضاء</string>
+    <string name="enable_adaptive_anc_tips">هل تريد استخدام نظام تقليل الضوضاء التكيفي الحالي؟</string>
+    <string name="redetect">إعادة التكيف</string>
+    <string name="enable_now">استخدام</string>
+    <string name="monitoring">جارٍ إعادة التكيف</string>
+    <string name="adaptive_anc_failure">فشل التكيف</string>
+    <string name="adaptive_anc_failure_tips">يرجى تجنب البلع، والتحدث، والمشي، وهز رأسك، وما إلى ذلك.</string>
+    <string name="give_up">تخلي</string>
+    <string name="retry">إعادة المحاولة</string>
+
+    <!--Voice Function-->
+    <string name="smart_no_pick">المرور الذكي</string>
+    <string name="smart_no_pick_tips">عندما تكتشف سماعة الرأس أنك تتحدث، فإنها تهيئ ظروف المحادثة تلقائيًا دون الحاجة إلى خلع سماعة الرأس.</string>
+    <string name="voice_check_sensitivity">حساسية اكتشاف الصوت</string>
+    <string name="close_time">وقت الإيقاف بعد بدء التشغيل</string>
+    <string name="high_sensitivity">حساسية عالية</string>
+    <string name="low_sensitivity">حساسية منخفضة</string>
+    <string name="high_level">عالي</string>
+    <string name="low_level">منخفض</string>
+    <string name="short_close_time">قصير (5 ثوانٍ)</string>
+    <string name="standard_close_time">قياسي (15 ثانية)</string>
+    <string name="long_close_time">طويل (30 ثانية)</string>
+    <string name="none_close_time">لا شيء</string>
+    <string name="close_time_tips">إذا لم تكتشف سماعاتك صوتك في الوقت المحدد، قم بإيقاف تشغيل المرور الذكي للعودة إلى الوضع الطبيعي.</string>
+    <string name="short_time">قصير</string>
+    <string name="standard_time">قياسي</string>
+    <string name="long_time">طويل</string>
+    <string name="none_time">لا شيء</string>
+    <string name="scene_denoising">تقليل ضوضاء المشهد</string>
+    <string name="scene_denoising_auto">تلقائي</string>
+    <string name="scene_denoising_auto_tips">تحكم تكيفي بناءً على بيئة الضوضاء</string>
+    <string name="scene_denoising_mild">خفيف</string>
+    <string name="scene_denoising_mild_tips">مثالي لبيئات المكاتب الهادئة</string>
+    <string name="scene_denoising_balance">متوازن</string>
+    <string name="scene_denoising_balance_tips">مناسب للبيئات الصاخبة</string>
+    <string name="scene_denoising_depth">عميق</string>
+    <string name="scene_denoising_depth_tips">مناسب للبيئات الصاخبة جدًا</string>
+    <string name="wind_noise_detection">اكتشاف ضوضاء الرياح</string>
+    <string name="wind_noise_detection_tips">تحت ضوضاء الرياح العالية، قلل من تأثير ضوضاء الرياح على ANC.</string>
+    <string name="vocal_booster">تحسين الصوت</string>
+
+    <!--Double Connection-->
+    <string name="double_connection">اتصال مزدوج بالجهاز</string>
+    <string name="function_open">فتح</string>
+    <string name="function_close">إغلاق</string>
+    <string name="double_connection_open_tips">عند تشغيله، يمكن لسماعات الرأس دعم توصيل جهازين في نفس الوقت والتبديل بسهولة بين إخراج الصوت بين الأجهزة.</string>
+    <string name="connected_devices">الأجهزة المتصلة</string>
+    <string name="native_dev">محلي</string>
+    <string name="close_double_connection_tips">هل أنت متأكد من أنك تريد إغلاق الاتصال المزدوج بالجهاز؟</string>
+    <string name="close_double_connection_content">بعد إيقاف التشغيل، سيتم فصل سماعات الرأس عن %1$s.</string>
+
+    <!--Feedback-->
+    <string name="tips_input_right_phone">يرجى إدخال رقم هاتف صحيح</string>
+    <string name="tips_input_phone">يرجى إدخال رقم الهاتف</string>
+    <string name="tips_input_feedback">يرجى إدخال محتوى الملاحظات</string>
+    <string name="feedback_type">نوع الملاحظات</string>
+    <string name="problem_feedback">ملاحظات حول المشكلة</string>
+    <string name="please_input_feedback">يرجى إدخال ملاحظاتك بالتفصيل</string>
+    <string name="please_input_phone">يرجى إدخال رقم هاتفك للاتصال</string>
+    <string name="commit">إرسال</string>
+
+    <!--Alarm-->
+    <string name="alarm_open_success">تم تفعيل المنبه</string>
+    <string name="alarm_open_failure">فشل تفعيل المنبه</string>
+    <string name="alarm_close_success">تم إيقاف المنبه</string>
+    <string name="alarm_close_failure">فشل إيقاف المنبه</string>
+    <string name="operate_alarm_failure">فشل تشغيل المنبه</string>
+    <string name="alarm_list_read_failed">فشل تحميل قائمة المنبهات</string>
+    <string name="delete">حذف</string>
+    <string name="alarm_set_num_is_full">وصلت قائمة المنبهات إلى الحد الأقصى</string>
+    <string name="alarm_delete_failure">فشل حذف المنبه</string>
+    <string name="alarm_delete_success">تم حذف المنبه</string>
+
+    <string name="alarm_stop_success">توقف المنبه</string>
+    <string name="alarm_stop_failed">فشل إيقاف المنبه</string>
+    <string name="alarm_delete">حذف المنبه</string>
+    <string name="sync_time">مزامنة الوقت</string>
+    <string name="sync_time_success">تمت مزامنة الوقت</string>
+    <string name="sync_time_failed">فشل مزامنة الوقت</string>
+
+    <string name="save_alarm_failed_no_modify">المنبه لم يتغير</string>
+    <string name="save_alarm_failed">فشل حفظ المنبه</string>
+    <string name="save_alarm_success">تم حفظ المنبه</string>
+    <string name="choose_repeat_mode_tip">يرجى اختيار الوضع</string>
+    <string name="alarm_name_can_not_be_empty">يجب ألا يكون اسم المنبه فارغًا</string>
+    <string name="alarm_name_length_too_long">اسم المنبه طويل جدًا</string>
+    <string name="alarm_name_format_error">خطأ: تنسيق إدخال اسم المنبه</string>
+    <string name="default_alarm_name">منبه</string>
+    <string name="default_alarm_custom">تخصيص</string>
+    <string name="alarm_edit_title">تعديل المنبه</string>
+    <string name="alarm_create_title">منبه جديد</string>
+    <string name="alarm_repeat_on_workday">من الاثنين إلى الجمعة</string>
+    <string name="alarm_repeat_every_day">كل يوم</string>
+    <string name="alarm_repeat_single">مرة واحدة</string>
+    <string name="alarm_repeat_week">أسبوع</string>
+    <string name="alarm_repeat_mon">الاثنين</string>
+    <string name="alarm_repeat_tue">الثلاثاء</string>
+    <string name="alarm_repeat_wed">الأربعاء</string>
+    <string name="alarm_repeat_thu">الخميس</string>
+    <string name="alarm_repeat_fri">الجمعة</string>
+    <string name="alarm_repeat_sat">السبت</string>
+    <string name="alarm_repeat_sun">الأحد</string>
+    <string name="alarm_repeat_simple_mon">إث</string>
+    <string name="alarm_repeat_simple_tue">ثل</string>
+    <string name="alarm_repeat_simple_wed">أر</string>
+    <string name="alarm_repeat_simple_thu">خم</string>
+    <string name="alarm_repeat_simple_fri">جم</string>
+    <string name="alarm_repeat_simple_sat">سب</string>
+    <string name="alarm_repeat_simple_sun">أح</string>
+
+    <!--AlarmSettings-->
+    <string name="alarm_settings">إدارة المنبه</string>
+    <string name="bell">الرنين</string>
+    <string name="repeat">تكرار</string>
+    <string name="light">الإضاءة</string>
+    <string name="alarm_state">الحالة</string>
+    <string name="delete_alarm_tip">يرجى تأكيد حذف هذا المنبه\n</string>
+    <string name="stop_alarm">إيقاف</string>
+    <string name="alarm_running">المنبه يرن</string>
+    <string name="unnamed">بدون عنوان</string>
+
+    <string name="alarm_bell_1">رنين 1</string>
+    <string name="alarm_bell_2">رنين 2</string>
+    <string name="alarm_bell_3">رنين 3</string>
+    <string name="alarm_bell_4">رنين 4</string>
+    <string name="alarm_bell_5">رنين 5</string>
+    <string name="alarm_default_bell">افتراضي</string>
+
+    <string name="alarm_bell_time">مدة المنبه</string>
+    <string name="min_format">%1$d دقيقة</string>
+    <string name="alarm_bell_interval">فاصل المنبه</string>
+    <string name="bell_repeat_count_title">وقت التكرار</string>
+    <string name="bell_interal_time_title">فاصل التكرار (بالدقائق)</string>
+    <string name="interval_format">%1$d دقيقة، %2$d مرة</string>
+    <string name="count_format">%1$d مرة</string>
+
+
+    <!--    Light-->
+    <string name="light_control">إعدادات الإضاءة</string>
+    <string name="light_scene_mode">الأوضاع</string>
+    <string name="light_color_temperature">درجة حرارة اللون</string>
+    <string name="light_coloured_lights">لون الإضاءة</string>
+    <string name="light_twinkle">وميض</string>
+    <string name="light_scene">الوضع</string>
+    <string name="light_tip_open_switch">يرجى تشغيل المفتاح الرئيسي</string>
+    <string name="light_scene_mode_1">قوس قزح</string>
+    <string name="light_scene_mode_2">نبض القلب</string>
+    <string name="light_scene_mode_3">شمعة</string>
+    <string name="light_scene_mode_4">ضوء ليلي</string>
+    <string name="light_scene_mode_5">مسرح</string>
+    <string name="light_scene_mode_6">ضوء تنفس - ألوان</string>
+    <string name="light_scene_mode_7">ضوء تنفس - أحمر</string>
+    <string name="light_scene_mode_8">ضوء تنفس - أخضر</string>
+    <string name="light_scene_mode_9">ضوء تنفس - أزرق</string>
+    <string name="light_scene_mode_10">تخضير</string>
+    <string name="light_scene_mode_11">غروب الشمس</string>
+    <string name="light_scene_mode_12">إيقاع</string>
+
+    <string name="color">اللون</string>
+    <string name="light_flash_quick">وميض سريع</string>
+    <string name="light_flash_slow">وميض بطيء</string>
+    <string name="light_flash_slower">وميض بطيء جداً</string>
+    <string name="light_flash_music">وميض إيقاعي</string>
+    <string name="light_color_collect">الألوان المحفوظة</string>
+    <string name="light_flash">وميض الألوان</string>
+    <string name="light_flash_freq">معدل الوميض</string>
+
+    <string name="light_model_1">وميض قوس قزح</string>
+    <string name="light_model_2">وميض أحمر</string>
+    <string name="light_model_3">وميض برتقالي</string>
+    <string name="light_model_4">وميض أصفر</string>
+    <string name="light_model_5">وميض أخضر</string>
+    <string name="light_model_6">وميض سماوي</string>
+    <string name="light_model_7">وميض أزرق</string>
+    <string name="light_model_8">وميض بنفسجي</string>
+    <string name="light_color_temperature_cold">بارد</string>
+    <string name="light_color_temperature_warm">دافئ</string>
+    <string name="light_color_temperature_gray">رمادي</string>
+    <string name="light_color_temperature_colorful">نابض بالحياة</string>
+    <string name="light_color_temperature_dark">داكن</string>
+    <string name="light_color_temperature_sun">مشمس</string>
+    <string name="light_color_temperature_cold_white">أبيض بارد</string>
+    <string name="light_color_temperature_natural_light">ضوء طبيعي</string>
+    <string name="light_color_temperature_bright">ساطع</string>
+    <string name="light_color_temperature_sunset">غروب الشمس</string>
+    <string name="light_color_temperature_candlelight">ضوء شمعة</string>
+
+    <!--Search Device-->
+    <string name="play_sound">تشغيل الصوت</string>
+    <string name="close_play">كتم الصوت</string>
+    <string name="connected_device_time_tips">آخر استخدام: الآن</string>
+    <string name="last_time_tips">آخر استخدام: %1$s</string>
+    <string name="distance_m">%1$s م</string>
+    <string name="distance_km">%1$s كم</string>
+    <string name="my_location">موقعي</string>
+    <string name="search_phone">البحث عن هاتفي</string>
+    <string name="search_device_tips">عند البحث عن الجهاز، ستصدر سماعات الأذن صوتًا بأقصى مستوى صوت، يرجى التأكد من عدم ارتدائها لتجنب تلف السمع.</string>
+    <string name="device_no_location_info">غير قادر على الحصول على الموقع</string>
+    <string name="today">اليوم</string>
+    <string name="tomorrow">غدًا</string>
+    <string name="yesterday">أمس</string>
+    <string name="play_way_all">تشغيل الكل</string>
+    <string name="play_way_left">تشغيل الجانب الأيسر فقط</string>
+    <string name="play_way_right">تشغيل الجانب الأيمن فقط</string>
+
+    <!--    Network Radio-->
+    <string name="fm_type_local">FM محلي</string>
+    <string name="fm_type_country">FM وطني</string>
+    <string name="fm_type_province">FM إقليمي</string>
+    <string name="fm_type_mycollect">مفضلتي</string>
+    <string name="loading">جارٍ التحميل</string>
+    <string name="loading_failed">فشل التحميل</string>
+    <string name="manage">إدارة</string>
+    <string name="msg_error_switch_mode">فشل تبديل الوضع</string>
+    <string name="empty_folder">مجلد فارغ</string>
+    <string name="empty_list_change_to_local">قائمة التشغيل الحالية فارغة، تم التبديل إلى قائمة FM المحلية</string>
+    <string name="resource_not_available">المورد الحالي غير متوفر.</string>
+    <string name="resource_not_available_next">المورد الحالي غير متوفر، يتم الانتقال إلى القناة التالية</string>
+    <string name="resource_not_available_prev">المورد الحالي غير متوفر، يتم الانتقال إلى القناة السابقة</string>
+
+
+    <!--Test-->
+    <string name="test_configuration">تكوين الاختبار</string>
+    <string name="save_configuration">حفظ التكوين</string>
+    <string name="use_device_auth">هل تؤكد تفعيل ترخيص الجهاز؟</string>
+    <string name="support_show_product_dialog">هل تؤكد تفعيل النافذة المنبثقة؟</string>
+    <string name="support_local_ota">هل تؤكد تفعيل التحديث المحلي عبر الهواء (OTA)؟</string>
+    <string name="show_dialog_rssi_tips">حساسية النافذة المنبثقة:</string>
+    <string name="rssi_unit">ديسيبل ميلي واط</string>
+    <string name="input_rssi_hint">يرجى إدخال قيمة RSSI المطلوبة [-100~0] ديسيبل ميلي واط</string>
+    <string name="local_ota_desc">File path is C:\\Users\\MyDevice</string>
+    <string name="test_custom_cmd">اختبار الأوامر المخصصة</string>
+    <string name="rssi_over_limit">معلمة RSSI ليست في النطاق القانوني</string>
+    <string name="click_again_to_test_configuration">يرجى النقر مرة أخرى للدخول إلى تكوين الاختبار</string>
+    <string name="save_configuration_success">تم حفظ التكوين، سيتم الخروج من التطبيق</string>
+    <string name="sound_card_eq_title">تأثير صوت الميكروفون</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">مرحباً أيها الجزء الفارغ</string>
+    <string name="fitting_results">نتائج الملاءمة</string>
+    <string name="left_ear_threshold_mean">متوسط عتبة السمع للأذن اليسرى</string>
+    <string name="right_ear_threshold_mean">متوسط عتبة السمع للأذن اليمنى</string>
+    <string name="written_to_the_device">تمت الكتابة إلى الجهاز</string>
+    <string name="make_sure_write_fitting">هل أنت متأكد من كتابة بيانات المعينة السمعية؟</string>
+    <string name="keep_fitting_record">الاحتفاظ بسجل الملاءمة</string>
+    <string name="write_saved_successfuly">تم الحفظ بنجاح</string>
+    <string name="write_saved_failed">فشل الحفظ</string>
+    <string name="db_hl">عتبة السمع/ديسيبل HL</string>
+    <string name="freq_hz">التردد/هرتز</string>
+    <string name="left_ear">الأذن اليسرى</string>
+    <string name="right_ear">الأذن اليمنى</string>
+    <string name="go_for_fitting">اذهب للملاءمة</string>
+    <string name="detect_hearing_impairment">اكتشاف ضعف السمع</string>
+    <string name="fitting_records">سجلات الملاءمة</string>
+    <string name="back_last_step">رجوع</string>
+    <string name="can_not_hear">لا أسمع</string>
+    <string name="hear">أسمع</string>
+    <string name="restart">إعادة التشغيل</string>
+    <string name="continue_str">متابعة</string>
+    <string name="check_no_finish_record">يوجد سجل لاختبار غير مكتمل. هل تريد المتابعة؟</string>
+    <string name="save_operation">نعم</string>
+    <string name="no_save_operation">لا</string>
+    <string name="check_exitt_fitting">تم اكتشاف خروج، هل تريد تخزين السجل الحالي مؤقتًا لمتابعة الاختبار في المرة القادمة؟</string>
+    <string name="please_prepare_for_the_following_tests">يرجى الاستعداد للاختبارات التالية</string>
+    <string name="fitting_prepare_step_1">يرجى ارتداء المعينة السمعية الخاصة بك \nاختر مكانًا هادئًا للبدء.</string>
+    <string name="fitting_prepare_step_2">عندما تسمع صوت "دي" في سماعة الرأس، انقر فوق "أسمع"؛\n إذا كنت لا تستطيع سماع أي شيء، انقر فوق "لا أسمع"</string>
+    <string name="i_know_it_2">أعلم ذلك.</string>
+    <string name="fitting">الملاءمة</string>
+    <string name="hearing_aid_fitting">ملاءمة المعينة السمعية</string>
+    <string name="select_fitting_gain_type">يرجى تحديد المعينة السمعية التي سيتم اختبارها.</string>
+    <string name="left_ear_single">اليسرى</string>
+    <string name="right_ear_single">اليمنى</string>
+    <string name="both_ear_single">كلتاهما</string>
+    <string name="both_ear">كلتا الأذنين</string>
+    <string name="both_ear_fitting">ملاءمة كلتا الأذنين</string>
+    <string name="left_ear_fitting">ملاءمة الأذن اليسرى</string>
+    <string name="right_ear_fitting">ملاءمة الأذن اليمنى</string>
+    <string name="left_ear_fitting_result">نتائج ملاءمة الأذن اليسرى</string>
+    <string name="right_ear_fitting_result">نتائج ملاءمة الأذن اليمنى</string>
+    <string name="both_ear_fitting_result">نتائج ملاءمة كلتا الأذنين</string>
+    <string name="is_save_to_fitting_record">هل تريد الحفظ في سجل الملاءمة؟</string>
+    <string name="fitting_record_too_long">الاسم طويل جدًا. يرجى تحديده بـ 20 حرفًا</string>
+
+    <!--TestExtFlashActivity-->
+    <!--<string name="test_ext_flash">FAT File System Test</string>
+    <string name="add_file_path_err">File path exception, please select again</string>
+    <string name="create_file_progress">Adding file[%1$s],progress:%2$d</string>
+    <string name="create_fat_file_success">File[%1$s] added successfully.Used Time : %2$s, Rate:%3$.1f kb/s</string>
+    <string name="create_fat_file_failed">Failed to add file[%1$s],reason:%2$d</string>
+    <string name="delete_fat_file_tips">Delete file[%1$s] or not?</string>
+    <string name="deleting_fat_file">Deleting…</string>
+    <string name="delete_fat_file_success">File[%1$s] deletion successfully.Used Time : %2$s</string>
+    <string name="delete_fat_file_failed">File[%1$s] deletion failed, reason:%2$d</string>
+    <string name="log_message">Logcat Message</string>
+    <string name="recovery_fat_system">Recovering…</string>
+    <string name="recovery_system_success">Recovery system successful</string>
+    <string name="recovery_system_failed">Recovery system failure, reason : %1$d</string>
+    <string name="write_protect_begin">Write protection begin</string>
+    <string name="delete_fat_file_warning">No less than 2 fat files</string>
+    <string name="updating_fat_resource">Updating…</string>-->
+
+</resources>

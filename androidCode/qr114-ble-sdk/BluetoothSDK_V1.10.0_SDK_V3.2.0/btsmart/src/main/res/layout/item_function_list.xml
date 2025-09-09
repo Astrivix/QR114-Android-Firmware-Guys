@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+DESIGN OPTIMIZATION (HORIZONTAL):
+
+1.  FLAT & EFFICIENT HIERARCHY: The nested LinearLayouts have been replaced with a single, high-performance
+    ConstraintLayout. This reduces layout nesting, which is a key performance best practice on Android.
+
+2.  RESPONSIVE & PRECISE ALIGNMENT: Constraints are used to precisely position the elements.
+    - The ImageView is anchored to the start of the card.
+    - The TextView is positioned to the right of the ImageView and fills the remaining space.
+    - Both views are vertically centered within the card.
+
+3.  FLEXIBLE TEXT HANDLING: The TextView's width is set to "0dp" (match_constraint). This allows it to
+    intelligently occupy all available space, gracefully handling both short and long text without breaking the layout.
+-->
+<com.astrivix.qr114.ui.widget.color_cardview.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_function_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/reciter_item_background"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ImageView is constrained to the start and vertically centered in the parent. -->
+        <ImageView
+            android:id="@+id/iv_item_function_icon"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_sd_card_green" />
+
+        <!--
+        TextView is constrained to the right of the icon and fills the remaining horizontal space.
+        It is also vertically centered to align perfectly with the icon.
+        -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_item_function_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_item_function_icon"
+            app:layout_constraintEnd_toStartOf="@+id/reciters_list_view"
+            app:layout_constraintStart_toEndOf="@id/iv_item_function_icon"
+            app:layout_constraintTop_toTopOf="@id/iv_item_function_icon"
+            tools:text="Reciters" />
+
+        <ImageView
+            android:id="@+id/reciters_list_view"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_reciters_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.astrivix.qr114.ui.widget.color_cardview.CardView>

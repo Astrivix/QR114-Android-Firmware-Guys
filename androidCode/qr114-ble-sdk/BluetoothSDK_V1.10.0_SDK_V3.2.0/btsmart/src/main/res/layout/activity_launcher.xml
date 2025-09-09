@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_green"
+    android:fitsSystemWindows="true"
+    tools:context="com.astrivix.qr114.ui.launcher.LauncherActivity">
+
+
+
+    <!-- This container is kept to respect the original structure, but is now centered -->
+    <RelativeLayout
+        android:id="@+id/rl_launcher_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!-- The logo is now centered horizontally within this group -->
+        <ImageView
+            android:id="@+id/iv_launcher_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/qr114_tm_logo"
+            tools:ignore="ContentDescription" />
+
+        <!-- The app name is below the logo and also centered horizontally -->
+        <ImageView
+            android:id="@+id/tv_launcher_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_text"
+            android:layout_below="@+id/iv_launcher_logo"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

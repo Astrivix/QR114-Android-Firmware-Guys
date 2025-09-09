@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the EditText is focused -->
+    <item android:drawable="@drawable/shape_edittext_focused" android:state_focused="true" />
+    <!-- Default state -->
+    <item android:drawable="@drawable/shape_edittext_unfocused" />
+</selector>

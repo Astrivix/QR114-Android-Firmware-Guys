@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <!--Common-->
+    <string name="app_name">QR 114</string>
+    <string name="more">Lainnya</string>
+    <string name="allow">Izinkan</string>
+    <string name="ban">Jangan tampilkan lagi</string>
+    <string name="finish">Selesai</string>
+    <string name="it_is_ok">OK!</string>
+    <string name="i_known">Mengerti!</string>
+    <string name="app_is_running">Aplikasi sedang berjalan.</string>
+    <string name="none_data">Tidak ada data</string>
+    <string name="close">Tutup</string>
+    <string name="no_data">Tidak ada konten yang ditemukan</string>
+    <!-- <string name="start_using">Mulai menggunakan</string>-->
+
+ <string name="email_hint_msg">Masukkan alamat email yang valid</string>
+ <string name="patent_text">Paten Perangkat Sedang Diproses xxxxxxxxxxxxxxxx</string>
+ <string name="copyright_text">© 2025 RHKCL</string>
+ <string name="repassword_hint">Masukkan Ulang Kata Sandi</string>
+ <string name="forgot_password_hint_msg">Lupa Kata Sandi?</string>
+ <string name="reset_password">Atur Ulang Kata Sandi</string>
+ <string name="back_to_login">Kembali ke Login</string>
+ <string name="contact_upport">Hubungi Dukungan</string>
+ <string name="reset_password_subtitle">Masukkan detail Anda untuk mengatur ulang kata sandi</string>
+
+
+ <string name="back">kembali</string>
+    <string name="cancel">Batal</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="double_tap_to_exit">Tekan lagi untuk keluar</string>
+    <string name="exit">keluar</string>
+    <string name="mobile_network_tip">Menggunakan jaringan seluler</string>
+    <string name="network_error_tip">Sepertinya ada yang salah dengan jaringan. Silakan periksa jaringan</string>
+    <string name="none_network_tip">Jaringan tidak terbuka, silakan buka jaringan</string>
+    <string name="ok">YA</string>
+    <string name="tips">tips</string>
+    <string name="to_setting">pergi ke pengaturan</string>
+    <style name="Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+ <string name="current_password">Kata Sandi Saat Ini</string>
+ <string name="new_password">Kata Sandi Baru</string>
+ <string name="confirm_new_password">Konfirmasi Kata Sandi Baru</string>
+ <string name="update_password">Perbarui Kata Sandi</string>
+ <string name="profile">Profil</string>
+ <string name="change_password">Ubah Kata Sandi</string>
+ <string name="rename_device">Ganti Nama Perangkat</string>
+ <string name="delete_device">Hapus Perangkat</string>
+ <string name="change_name_guide_text">Gunakan: Huruf (A-Z), angka (0-9), spasi, - _ . ( ). Hindari: spasi, karakter khusus</string>
+ <string name="logout">Keluar</string>
+ <string name="home">Beranda</string>
+
+ <string name="confirm_text">Konfirmasi</string>
+ <string name="cancel_text">Batal</string>
+
+    <string name="qr114" translatable="false">QR 114</string>
+    <string name="new_version_available" >Versi Baru Tersedia</string>
+    <string name="update_file_ready" translatable="false">File Pembaruan Siap</string>
+    <string name="download_completed" translatable="false">Unduhan Selesai</string>
+
+    <!-- Log In Screen -->
+ <string name="login_title" >Masuk</string>
+    <string name="login_subtitle" translatable="false">Masukkan email dan kata sandi untuk\nMasuk</string>
+    <string name="login_button" translatable="false">Masuk</string>
+    <string name="login_nav_to_signup" translatable="false">Belum punya akun? <b>Daftar</b></string>
+   <string name="password_hint_msg">Kata sandi harus terdiri dari minimal 8 karakter</string>
+   <!-- Sign Up / Registration Screen -->
+    <string name="signup_title" translatable="false">Registrasi Produk</string>
+    <string name="signup_subtitle" translatable="false">Masukkan nomor seri, email, dan kata sandi untuk menyelesaikan penyiapan. Kata sandi harus terdiri dari minimal 8 karakter</string>
+    <string name="serial_number_hint" translatable="false">Nomor Seri</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="password_hint" translatable="false">Kata Sandi</string>
+    <string name="register_button" translatable="false">Daftar</string>
+    <string name="signup_nav_to_login" translatable="false"><b>Sudah punya akun?</b></string>
+    <string name="terms_and_conditions" translatable="false">Dengan melanjutkan, saya mengonfirmasi bahwa saya telah membaca dan menyetujui <b>Lisensi, Syarat dan Ketentuan</b>, dan <b>Kebijakan Privasi</b> dari RigidMeds Canada INC.</string>
+
+    <!--Network-->
+    <string name="no_network">Tidak ada koneksi jaringan, silakan periksa jaringan Anda</string>
+    <string name="network_exception">Kesalahan Jaringan</string>
+    <string name="network_exception_tips">Silakan periksa koneksi jaringan Anda dan coba lagi</string>
+
+    <!--Permission-->
+    <string name="open_gpg_tip">Izin GPS diperlukan, silakan izinkan akses ke layanan lokasi</string>
+    <string name="permissions_tips_01">Untuk menggunakan aplikasi ini secara normal, silakan</string>
+    <string name="permission_contacts">Izinkan membaca dan menulis kontak</string>
+    <string name="permission_mic">Izinkan akses ke mikrofon</string>
+    <string name="permission_read_phone_state">Izinkan akses ke informasi telepon</string>
+    <string name="permission_location">Izinkan akses ke lokasi</string>
+    <string name="permission_storage">Izinkan membaca dan menulis file</string>
+    <string name="permission_bluetooth">Izinkan akses ke Bluetooth</string>
+    <string name="permission_phone_settings">Izinkan mengubah pengaturan telepon</string>
+    <string name="permissions_tips_02">Silakan buka pengaturan sistem dan berikan izin aplikasi ini</string>
+    <string name="permission">izin</string>
+
+    <!--Device state-->
+    <string name="first_connect_device">Silakan hubungkan perangkat terlebih dahulu</string>
+    <string name="unconnected_device">Tidak Ada Perangkat Terhubung</string>
+    <string name="unconnected_device_tips">Tidak ada perangkat yang terhubung, silakan hubungkan atau tambahkan perangkat terlebih dahulu</string>
+    <string name="connectable_devies">Perangkat untuk dihubungkan</string>
+    <string name="disconnect_device">Putuskan sambungan perangkat</string>
+
+    <string name="msg_read_file_err_reading">Perangkat sibuk, silakan coba lagi</string>
+    <string name="msg_read_file_err_offline">Perangkat offline</string>
+    <string name="msg_call_tip">Sedang menelepon…</string>
+    <string name="no_support_reverberation">Reverb tidak didukung pada perangkat saat ini</string>
+
+    <string name="bt_connecting">Menyambungkan</string>
+    <string name="device_status_unconnected">Terputus</string>
+    <string name="device_status_connected">Terhubung</string>
+    <string name="device_status_using">Sedang digunakan</string>
+    <string name="device_status_mandatory_upgrade">Pembaruan diperlukan</string>
+    <string name="connect_device">Hubungkan perangkat</string>
+    <string name="connect_tip">Koneksi</string>
+    <string name="device_connecting">Menyambungkan…</string>
+    <string name="bt_connect_failed">Gagal menyambungkan</string>
+    <string name="device_status_reconnect">Menyambungkan kembali</string>
+
+    <!--LauncherActivity-->
+    <string name="privacy_policy">Kebijakan privasi</string>
+    <string name="user_agreement">Perjanjian pengguna</string>
+    <string name="agree_with">Saya setuju dengan</string>
+    <string name="dialog_tips">Pengingat</string>
+    <string name="user_service_tips">\t\tSelamat datang di APLIKASI %1$s. Saat Anda menggunakannya, Anda perlu terhubung ke jaringan data atau operator WLAN. Silakan konsultasikan dengan operator lokal untuk biaya lalu lintas. Kami sangat mementingkan perlindungan privasi dan informasi pribadi Anda.</string>
+    <string name="user_service_tips2">Silakan baca "Perjanjian pengguna" dan "Kebijakan privasi" dengan saksama sebelum Anda menggunakan APLIKASI %1$s. Anda dapat menggunakan layanan kami setelah Anda setuju dan menerima semua syarat.</string>
+    <string name="privacy_policy_name">"Kebijakan privasi"</string>
+    <string name="user_service_name">"Perjanjian pengguna"</string>
+    <string name="and">dan</string>
+    <string name="agree_and_use">Setuju dan lanjutkan</string>
+    <string name="not_agree_and_exit">Tidak setuju dan keluar</string>
+
+    <!--HomeActivity-->
+    <string name="tab_multimedia">Media</string>
+    <string name="tab_home">Beranda</string>
+    <string name="tab_logout">Keluar</string>
+
+    <string name="tab_eq">Equalizer</string>
+    <string name="tab_device">Perangkat</string>
+    <string name="switch_classic_device_tips">Perangkat output sumber audio saat ini [%1$s] tidak konsisten dengan perangkat [%2$s] yang digunakan. Silakan alihkan output [%3$s] untuk memastikan pengalaman pengguna</string>
+    <string name="add_device">Tambah Perangkat Baru</string>
+
+
+    <!--DeviceFragment-->
+    <string name="my_devices">Perangkat Saya</string>
+    <string name="pack_up">Info Lebih Sedikit</string>
+    <string name="device_connecting_tips">Menyambungkan, harap tunggu…</string>
+    <string name="bluetooth_not_enable">Bluetooth MATI</string>
+    <string name="connect_device_over_limit">Mencapai batas maksimum perangkat Bluetooth, silakan putuskan perangkat yang tidak diinginkan di pengaturan sistem</string>
+    <string name="background_show_activity_failed_tips">Izin aktivitas latar belakang (jendela pop-up) ditolak, silakan berikan izin</string>
+    <string name="switch_device_tips">Peralihan perangkat berhasil.</string>
+    <string name="device_not_using">Perangkat ini saat ini tidak digunakan</string>
+    <string name="device_charging_bin">%1$sKotak pengisi daya</string>
+    <string name="connect_history_failed_tips">Perangkat tidak ditemukan:[%1$s]</string>
+
+    <!--Multi media-->
+    <string name="multi_media_local">Media Lokal</string>
+    <string name="multi_media_usb_drive">Drive USB</string>
+    <string name="multi_media_sd_card">Kartu SD</string>
+    <string name="multi_media_fm_launch">Pemancar FM</string>
+    <string name="multi_media_fm_receive">Penerima FM</string>
+    <string name="multi_media_line_in">AUX</string>
+    <string name="multi_media_light_settings">Efek Cahaya</string>
+    <string name="multi_media_alarm">Alarm</string>
+    <string name="multi_media_search_device">Temukan Perangkat Saya</string>
+    <string name="multi_media_net_radio">Radio Online</string>
+    <string name="multi_media_sound_card">Karaoke</string>
+
+    <!--Local music-->
+    <string name="none_music_data">Tidak ada file musik yang ditemukan, silakan tambahkan musik</string>
+    <string name="song_list_top_all_song">Semua Musik</string>
+    <string name="song_list_top_song_num">(Total %1$d Lagu)</string>
+    <string name="current_version">Versi saat ini</string>
+    <string name="local_music_none">Tidak ada file musik lokal yang ditemukan</string>
+
+    <!--Device Music-->
+    <string name="back_to_root">Sekarang di direktori root</string>
+    <string name="device_music">Musik di perangkat</string>
+    <string name="switch_mode_success">Beralih ke Mode %1$s </string>
+    <string name="msg_read_file_err_beyond_max_depth">Melebihi kedalaman yang dapat dibaca</string>
+    <string name="sd_card">Kartu SD</string>
+    <string name="udisk">Drive USB</string>
+
+    <!--ID3 Music-->
+    <string name="none_id3_music_data">Gagal mendapatkan informasi ID3</string>
+    <string name="other_music_player">(dari aplikasi pemutar musik lain)</string>
+
+    <!--FM Feature-->
+    <string name="search_forward">cari maju</string>
+    <string name="search_all">cari semua</string>
+    <string name="search_backward">cari mundur</string>
+    <string name="freq_point_collect">Simpan saluran</string>
+    <string name="freq_point_manage">Kelola saluran</string>
+    <string name="net_radio">Radio Online</string>
+    <string name="freq_point_collect_success">Saluran Disimpan</string>
+    <string name="freq_point_collect_existed">Tersimpan</string>
+    <string name="freq_point">Frekuensi</string>
+    <string name="searching">Mencari saluran…</string>
+    <string name="fm_value_no_change">Frekuensi FM tidak berubah</string>
+    <string name="fm_range">Rentang frekuensi 87.5~108.0MHz</string>
+    <string name="fm_only_one_decimal">Frekuensi akurat hingga satu desimal</string>
+    <string name="fm_no_decimal">Kosong pada tempat desimal</string>
+
+    <!--Device Setting-->
+    <string name="setting">Pengaturan</string>
+    <string name="named">Nama</string>
+    <string name="device_name_over_limit">Nama perangkat terlalu panjang, batasnya adalah %1$d karakter</string>
+    <string name="not_support_tips">Fitur belum didukung</string>
+    <string name="tip_empty_device_name">Nama tidak boleh kosong</string>
+    <string name="tip_same_device_name">Nama perangkat tidak berubah</string>
+    <string name="require_tws_info_error">Gagal mendapatkan informasi perangkat, klik untuk mendapatkan lagi</string>
+    <string name="retrieved">Diambil</string>
+
+    <!--OTA function-->
+    <string name="firmware_current_version">Versi saat ini</string>
+    <string name="found_new_version">Pembaruan firmware ditemukan: %1$s</string>
+    <string name="new_version">Pembaruan firmware baru: %1$s</string>
+    <string name="download_tips">mengunduh</string>
+    <string name="upgrade_tips">Memperbarui firmware</string>
+    <string name="upgrading_tips">Memperbarui</string>
+    <string name="upgrade_progress_prepare">Pembaruan siap %1$s</string>
+    <string name="upgrade_progress_update">Memperbarui %1$s</string>
+    <string name="upgrade_warning">Memperbarui firmware, harap jaga koneksi Bluetooth dan jaringan, JANGAN matikan perangkat Bluetooth atau kunci layar</string>
+    <string name="upgrade_success">Pembaruan selesai</string>
+    <string name="upgrade_failed">Pembaruan gagal</string>
+    <string name="upgrade_cancel">Pembaruan dibatalkan</string>
+    <string name="device_must_mandatory_upgrade">\t\t\t\tPerangkat (%1$s) memerlukan OTA penuh untuk penggunaan yang benar.</string>
+    <string name="network_err_tips">Gagal terhubung ke server, silakan periksa jaringan.</string>
+    <string name="double_click_to_disconnect">Ketuk dua kali tombol Kembali akan memutuskan koneksi perangkat.</string>
+    <string name="upgrade_immediately">Perbarui sekarang</string>
+
+    <!--OTA error tips-->
+    <string name="ota_error_msg_receive_cmd_timeout">Waktu tunggu penerimaan perintah habis</string>
+    <string name="ota_error_msg_device_disconnected">Bluetooth terputus</string>
+    <string name="ota_error_msg_error_param">Kesalahan parameter</string>
+    <string name="ota_error_msg_param_null">Parameter kosong</string>
+    <string name="ota_error_msg_file_not_found">File tidak ditemukan</string>
+    <string name="ota_error_msg_file_read_fail">Gagal membaca file</string>
+    <string name="ota_error_msg_file_not_exist">File tidak ada</string>
+    <string name="ota_error_msg_bluetooth_not_connected">Bluetooth terputus</string>
+    <string name="ota_error_msg_no_update_version">Tidak ada pembaruan ditemukan</string>
+    <string name="ota_error_msg_ota_is_continuing">OTA sedang berlangsung, jangan dioperasikan</string>
+    <string name="ota_error_msg_device_not_connected">Perangkat terputus</string>
+    <string name="ota_error_msg_response_empty">Balasan kosong</string>
+    <string name="ota_error_msg_data_length_error">Kesalahan: panjang data</string>
+    <string name="ota_error_msg_response_status_error">Perangkat membalas dengan status buruk: </string>
+    <string name="ota_error_msg_low_equipmeent">Baterai perangkat terlalu rendah</string>
+    <string name="ota_error_msg_check_upgrade_file_failed">Kesalahan: Validasi file OTA gagal</string>
+    <string name="ota_error_msg_upgrade_file_version_no_change">Versi tidak berubah</string>
+    <string name="ota_error_msg_tws_is_not_connected">Earbud TWS terputus</string>
+    <string name="ota_error_msg_headset_not_in_charging">Earbud tidak ada di dalam kotak</string>
+    <string name="ota_error_msg_enter_update_mode_failed">Kesalahan: Perangkat gagal masuk ke mode pembaruan</string>
+    <string name="ota_error_msg_offest_over_limit">Offset melebihi batas</string>
+    <string name="ota_error_msg_receive_error_data">Validasi data gagal</string>
+    <string name="ota_error_msg_upgrade_failed">Pembaruan gagal</string>
+    <string name="ota_error_msg_key_not_match">Kesalahan: Verifikasi kunci gagal</string>
+    <string name="ota_error_msg_check_file_error">Kesalahan: Verifikasi data gagal</string>
+    <string name="ota_error_msg_type_not_match">Kesalahan: Jenis pembaruan tidak cocok</string>
+    <string name="ota_error_msg_flash_read_error">Kesalahan: Gagal membaca/menulis memori perangkat</string>
+    <string name="ota_error_msg_handler_cmd_timeout">Kesalahan: Waktu tunggu penanganan perintah perangkat habis</string>
+    <string name="ota_error_msg_error_unkonwn">Kesalahan: Kesalahan tidak diketahui</string>
+    <string name="ota_error_msg_download_ota_file_failed">Kesalahan: Gagal mengunduh firmware pembaruan, pesan:</string>
+    <string name="ota_error_msg_request_ota_file_failed">Kesalahan: Gagal meminta info file firmware pembaruan, pesan:</string>
+    <string name="ota_error_msg_disconnect_tip">Pembaruan sedang berlangsung, JANGAN ganggu koneksi bluetooth</string>
+
+    <!--Product Design Dialog-->
+    <!--   <string name="device_paired_finish">Selesai</string>-->
+    <string name="device_auto_connecting">Perangkat sedang menyambungkan ulang secara otomatis</string>
+    <string name="device_connectionless_tips">Silakan atur perangkat ke mode pemasangan</string>
+    <string name="request_floating_window_permission_tips">Untuk pengalaman pengguna yang lebih baik, silakan berikan izin "tampilan di atas aplikasi lain"</string>
+    <string name="scanning_ble_device">Mencari perangkat…</string>
+    <string name="device_review">Lihat perangkat</string>
+    <string name="disconnect_device_tips">Harap konfirmasi untuk memutuskan koneksi perangkat?</string>
+    <string name="bt_connected_error_tip">[%1$s] sedang terhubung ke perangkat lain</string>
+    <string name="device_not_owner">Ini bukan perangkat Anda</string>
+    <string name="long_click_cancel_pair">Harap tekan lama tombol kotak pengisi daya untuk menyambungkan</string>
+    <string name="make_sure_headset_paired">Harap konfirmasi earbud/headphone berada dalam mode pemasangan</string>
+    <string name="long_click_cancel_pair_soundbox">Harap tekan lama tombol daya untuk menyambungkan</string>
+    <string name="make_sure_soundbox_paired">Harap konfirmasi perangkat berada dalam mode pemasangan</string>
+
+    <!--History Device-->
+    <string name="remove_history_device_failed">Gagal mengabaikan perangkat</string>
+
+    <!--EQ function-->
+    <string name="eq_normal">Normal</string>
+    <string name="eq_rock">Rock</string>
+    <string name="eq_pop">Pop</string>
+    <string name="eq_classical">Klasik</string>
+    <string name="eq_jazz">Jazz</string>
+    <string name="eq_country">Country</string>
+    <string name="eq_user">Kustom</string>
+    <string name="eq_advanced_setting">Pengaturan Lanjutan</string>
+    <string name="eq_advanced_reverberation">Reverb</string>
+    <string name="eq_advanced_dynamic">DRC</string>
+    <string name="eq_advanced_depth">Kedalaman</string>
+    <string name="eq_advanced_strength">Gain</string>
+    <string name="current_volume">Volume saat ini:</string>
+
+    <string name="eq_freq_16k">16k</string>
+    <string name="eq_freq_8k">8k</string>
+    <string name="eq_freq_4k">4k</string>
+    <string name="eq_freq_2k">2k</string>
+    <string name="eq_freq_1k">1k</string>
+    <string name="eq_freq_500">500</string>
+    <string name="eq_freq_250">250</string>
+    <string name="eq_freq_125">125</string>
+    <string name="eq_freq_63">63</string>
+    <string name="eq_freq_31">31</string>
+    <string name="eq_freq_12db">+8dB</string>
+    <string name="eq_freq_0db">0dB</string>
+    <string name="eq_freq_negative_12db">-8dB</string>
+    <string name="music_time_default">00:00</string>
+    <string name="product_default_quantity">100%</string>
+
+    <string name="volume_bass">Bass</string>
+    <string name="volume_main">Volume utama</string>
+    <string name="volume_height">Treble</string>
+    <string name="eq_reset">Reset</string>
+    <string name="eq_preset">Preset</string>
+
+    <!--App Settings-->
+    <string name="shake_cut_song">goyangkan untuk lagu berikutnya</string>
+    <string name="shake_change_light_color">goyangkan untuk mengubah warna cahaya</string>
+    <string name="shake_change_light_color_note">Perangkat perlu mendukung pengaturan cahaya</string>
+    <string name="about">Tentang</string>
+    <string name="feedback">Umpan Balik</string>
+    <string name="device_instructions">Petunjuk pengguna perangkat</string>
+    <string name="multilingual">Bahasa</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="follow_system">Gunakan bahasa default sistem</string>
+    <string name="english">Inggris</string>
+    //sasa edit
+
+    <string name="indonesian" translatable="false">Indonesia</string>
+    <string name="turkish" translatable="false">Turki</string>
+    <string name="malay" translatable="false">Melayu</string>
+    <string name="arabic" translatable="false">Arab</string>
+
+
+    <string name="japanese">日本語</string>
+    <string name="set_language">Pengaturan bahasa</string>
+
+    <!--About-->
+    <string name="app_version_name">Versi perangkat lunak:%1$s</string>
+    <string name="app_version">Versi APLIKASI:%1$s</string>
+    <string name="firmware_version_name">Versi firmware:%1$s</string>
+    <string name="check_update">Periksa pembaruan</string>
+    <string name="firmware_update">Pembaruan firmware</string>
+    <string name="laster_version">Versi terbaru sedang digunakan</string>
+
+    <!--Device Function Settings-->
+    <string name="boot_up">Nyalakan</string>
+    <string name="shut_down">Matikan</string>
+    <string name="music_pp">Putar/Jeda</string>
+    <string name="previous_song">Sebelumnya</string>
+    <string name="next_song">Berikutnya</string>
+    <string name="voice_inc">Volume+</string>
+    <string name="voice_dec">Volume-</string>
+    <string name="call_back">Panggil panggilan terakhir</string>
+    <string name="hang_up">Tutup telepon</string>
+    <string name="answer_call">Angkat telepon</string>
+    <string name="ai_speech">Aktifkan perintah suara</string>
+    <string name="take_photo">Ambil gambar</string>
+    <string name="none">Tidak ada</string>
+    <string name="bluetooth_name">Nama Bluetooth</string>
+    <string name="work_mode">Mode kerja</string>
+    <string name="mic_channel">Mikrofon</string>
+    <string name="led_settings">Pengaturan LED</string>
+    <string name="in_ear_check">Deteksi pemakaian</string>
+    <string name="settings_failed">Gagal mengubah pengaturan</string>
+    <string name="settings_failed_by_game_mode">Kontrol mikrofon dinonaktifkan dalam mode permainan</string>
+    <string name="settings_failed_dev_name_len_over_limit">Nama tidak sah atau panjang mencapai batas</string>
+    <string name="settings_failed_led_settings">Kerlip LED dinonaktifkan dalam mode non-Bluetooth</string>
+    <string name="device_name_change_tips">Perubahan ini memerlukan restart perangkat, restart sekarang?</string>
+    <string name="device_name_failure">Gagal mengubah nama perangkat</string>
+    <string name="not_immediately_effective">Perubahan akan diterapkan setelah restart</string>
+    <string name="immediately_effective">Terapkan sekarang</string>
+    <string name="not_allow_settings_tip">Perangkat tidak diizinkan untuk diatur. Harap konfirmasi apakah koneksi sudah dipasangkan atau belum.</string>
+    <string name="remove_history_device_tips">Konfirmasi untuk mengabaikan perangkat ini?</string>
+    <string name="remove_history_device">Abaikan perangkat ini</string>
+    <string name="modify_dev_name_tips">(Harap sambungkan kembali perangkat jika nama perangkat yang ditampilkan salah)</string>
+
+    <string name="noise_control">Pengaturan ANC</string>
+    <string name="noise_mode_denoise">ANC ON</string>
+    <string name="noise_mode_close">ANC OFF</string>
+    <string name="noise_mode_transparent">Mode Transparan</string>
+    <string name="save">Simpan</string>
+    <string name="noise_mode_desc_close">Nonaktifkan peredam bising</string>
+    <string name="noise_mode_desc_denoise">Kompresi suara sekitar</string>
+    <string name="noise_mode_desc_transparent">Suara sekitar tembus</string>
+    <string name="enable">Aktifkan</string>
+    <string name="input_valid_value_tips">Harap masukkan nilai yang valid antara [%1$d,%2$d]</string>
+    <string name="left_dev_denoise_value">Gain ANC sisi kiri</string>
+    <string name="right_dev_denoise_value">Gain ANC sisi kanan</string>
+    <string name="left_dev_transparent_value">Gain Transparan sisi kiri</string>
+    <string name="right_dev_transparent_value">Tingkat/gain Transparan sisi kanan</string>
+    <string name="invalid_mode">Mode tidak valid</string>
+    <string name="unknown_mode">Mode tidak dikenal</string>
+    <string name="denoise_value">Gain ANC</string>
+    <string name="transparent_value">Gain Transparan</string>
+    <string name="maximum_tips">Mencapai maksimum</string>
+
+    <!--Adaptive ANC-->
+    <string name="adaptive_anc">ANC Adaptif</string>
+    <string name="adaptive_anc_desc">Nyalakan algoritma adaptif ANC untuk mengkompensasi perbedaan saluran telinga dan pemakaian, dan meningkatkan kinerja peredam bising</string>
+    <string name="enable_adaptive_anc_tips">Apakah akan menggunakan skema peredam bising adaptif yang ada?</string>
+    <string name="redetect">Adaptasi Ulang</string>
+    <string name="enable_now">Gunakan</string>
+    <string name="monitoring">Mengadaptasi Ulang</string>
+    <string name="adaptive_anc_failure">Gagal adaptasi</string>
+    <string name="adaptive_anc_failure_tips">Harap hindari menelan, berbicara, berjalan, menggelengkan kepala, dll.</string>
+    <string name="give_up">menyerah</string>
+    <string name="retry">coba lagi</string>
+
+    <!--Voice Function-->
+    <string name="smart_no_pick">Smart No Pick</string>
+    <string name="smart_no_pick_tips">Saat headset mendeteksi Anda berbicara, headset secara otomatis membangun kondisi percakapan tanpa melepas headset.</string>
+    <string name="voice_check_sensitivity">Sensitivitas Deteksi Suara</string>
+    <string name="close_time">Waktu Mati Setelah Dinyalakan</string>
+    <string name="high_sensitivity">Sensitivitas Tinggi</string>
+    <string name="low_sensitivity">Sensitivitas Rendah</string>
+    <string name="high_level">Tinggi</string>
+    <string name="low_level">Rendah</string>
+    <string name="short_close_time">Singkat (5 Detik)</string>
+    <string name="standard_close_time">Standar (15 Detik)</string>
+    <string name="long_close_time">Lama (30 Detik)</string>
+    <string name="none_close_time">Tidak ada</string>
+    <string name="close_time_tips">Jika headphone Anda tidak mendeteksi suara Anda pada waktu yang ditentukan, matikan Smart Pass-off untuk kembali normal.</string>
+    <string name="short_time">Singkat</string>
+    <string name="standard_time">Standar</string>
+    <string name="long_time">Lama</string>
+    <string name="none_time">Tidak ada</string>
+    <string name="scene_denoising">Peredam Bising Adegan</string>
+    <string name="scene_denoising_auto">Otomatis</string>
+    <string name="scene_denoising_auto_tips">Kontrol adaptif berdasarkan lingkungan bising</string>
+    <string name="scene_denoising_mild">Ringan</string>
+    <string name="scene_denoising_mild_tips">Ideal untuk lingkungan kantor yang tenang</string>
+    <string name="scene_denoising_balance">Seimbang</string>
+    <string name="scene_denoising_balance_tips">Cocok untuk lingkungan bising</string>
+    <string name="scene_denoising_depth">Dalam</string>
+    <string name="scene_denoising_depth_tips">Cocok untuk lingkungan yang sangat bising</string>
+    <string name="wind_noise_detection">Deteksi Suara Angin</string>
+    <string name="wind_noise_detection_tips">Di bawah suara angin yang kencang, kurangi dampak suara angin pada ANC.</string>
+    <string name="vocal_booster">Peningkat Vokal</string>
+
+    <!--Double Connection-->
+    <string name="double_connection">Koneksi ganda perangkat</string>
+    <string name="function_open">Buka</string>
+    <string name="function_close">Tutup</string>
+    <string name="double_connection_open_tips">Saat dihidupkan, headphone dapat mendukung koneksi dua perangkat secara bersamaan dan dengan mudah beralih output audio antar perangkat.</string>
+    <string name="connected_devices">Perangkat terhubung</string>
+    <string name="native_dev">Asli</string>
+    <string name="close_double_connection_tips">Apakah Anda yakin ingin menutup koneksi perangkat ganda?</string>
+    <string name="close_double_connection_content">Setelah dimatikan, headphone akan terputus dari %1$s.</string>
+
+    <!--Feedback-->
+    <string name="tips_input_right_phone">Harap masukkan nomor telepon yang benar</string>
+    <string name="tips_input_phone">Harap masukkan nomor telepon</string>
+    <string name="tips_input_feedback">Harap masukkan konten umpan balik</string>
+    <string name="feedback_type">Jenis umpan balik</string>
+    <string name="problem_feedback">Umpan balik masalah</string>
+    <string name="please_input_feedback">Harap masukkan umpan balik Anda secara detail</string>
+    <string name="please_input_phone">Harap masukkan nomor telepon Anda untuk kontak</string>
+    <string name="commit">Kirim</string>
+
+    <!--Alarm-->
+    <string name="alarm_open_success">Alarm diaktifkan</string>
+    <string name="alarm_open_failure">Gagal mengaktifkan alarm</string>
+    <string name="alarm_close_success">Alarm ditutup</string>
+    <string name="alarm_close_failure">Gagal menutup alarm</string>
+    <string name="operate_alarm_failure">Gagal mengoperasikan alarm</string>
+    <string name="alarm_list_read_failed">Gagal memuat daftar alarm</string>
+    <string name="delete">Hapus</string>
+    <string name="alarm_set_num_is_full">Daftar alarm mencapai batas</string>
+    <string name="alarm_delete_failure">Gagal menghapus alarm</string>
+    <string name="alarm_delete_success">Alarm dihapus</string>
+
+    <string name="alarm_stop_success">Alarm dihentikan</string>
+    <string name="alarm_stop_failed">Gagal menghentikan alarm</string>
+    <string name="alarm_delete">Hapus alarm</string>
+    <string name="sync_time">Sinkronisasi waktu</string>
+    <string name="sync_time_success">Waktu disinkronkan</string>
+    <string name="sync_time_failed">Gagal menyinkronkan waktu</string>
+
+    <string name="save_alarm_failed_no_modify">Alarm tidak berubah</string>
+    <string name="save_alarm_failed">Gagal menyimpan alarm</string>
+    <string name="save_alarm_success">Alarm disimpan</string>
+    <string name="choose_repeat_mode_tip">Silakan pilih mode</string>
+    <string name="alarm_name_can_not_be_empty">Nama alarm tidak boleh kosong</string>
+    <string name="alarm_name_length_too_long">Nama alarm terlalu panjang</string>
+    <string name="alarm_name_format_error">Kesalahan: format input nama alarm</string>
+    <string name="default_alarm_name">Alarm</string>
+    <string name="default_alarm_custom">Kustom</string>
+    <string name="alarm_edit_title">Edit alarm</string>
+    <string name="alarm_create_title">Alarm baru</string>
+    <string name="alarm_repeat_on_workday">Senin hingga Jumat</string>
+    <string name="alarm_repeat_every_day">Setiap hari</string>
+    <string name="alarm_repeat_single">Satu kali</string>
+    <string name="alarm_repeat_week">Minggu</string>
+    <string name="alarm_repeat_mon">Senin </string>
+    <string name="alarm_repeat_tue">Selasa </string>
+    <string name="alarm_repeat_wed">Rabu </string>
+    <string name="alarm_repeat_thu">Kamis </string>
+    <string name="alarm_repeat_fri">Jumat </string>
+    <string name="alarm_repeat_sat">Sabtu </string>
+    <string name="alarm_repeat_sun">Minggu</string>
+    <string name="alarm_repeat_simple_mon">Sen</string>
+    <string name="alarm_repeat_simple_tue">Sel</string>
+    <string name="alarm_repeat_simple_wed">Rab</string>
+    <string name="alarm_repeat_simple_thu">Kam</string>
+    <string name="alarm_repeat_simple_fri">Jum</string>
+    <string name="alarm_repeat_simple_sat">Sab</string>
+    <string name="alarm_repeat_simple_sun">Min</string>
+
+    <!--AlarmSettings-->
+    <string name="alarm_settings">Manajemen alarm</string>
+    <string name="bell">Dering</string>
+    <string name="repeat">Ulangi</string>
+    <string name="light">Lampu</string>
+    <string name="alarm_state">Status</string>
+    <string name="delete_alarm_tip">Harap konfirmasi untuk menghapus alarm ini\n</string>
+    <string name="stop_alarm">Hentikan</string>
+    <string name="alarm_running">Alarm berbunyi</string>
+    <string name="unnamed">Tanpa Judul</string>
+
+    <string name="alarm_bell_1">Dering 1</string>
+    <string name="alarm_bell_2">Dering 2</string>
+    <string name="alarm_bell_3">Dering 3</string>
+    <string name="alarm_bell_4">Dering 4</string>
+    <string name="alarm_bell_5">Dering 5</string>
+    <string name="alarm_default_bell">Default</string>
+
+    <string name="alarm_bell_time">Durasi alarm</string>
+    <string name="min_format">%1$d mnt</string>
+    <string name="alarm_bell_interval">Interval alarm</string>
+    <string name="bell_repeat_count_title">Waktu pengulangan</string>
+    <string name="bell_interal_time_title">Interval pengulangan (mnt)</string>
+    <string name="interval_format">%1$d mnt, %2$d kali</string>
+    <string name="count_format">%1$d kali</string>
+
+
+    <!--    Light-->
+    <string name="light_control">Pengaturan lampu</string>
+    <string name="light_scene_mode">Profil</string>
+    <string name="light_color_temperature">Suhu Warna</string>
+    <string name="light_coloured_lights">Warna lampu</string>
+    <string name="light_twinkle">Kerlip</string>
+    <string name="light_scene">Profil</string>
+    <string name="light_tip_open_switch">Harap atur sakelar utama ke ON</string>
+    <string name="light_scene_mode_1">Pelangi</string>
+    <string name="light_scene_mode_2">Detak Jantung</string>
+    <string name="light_scene_mode_3">Lilin</string>
+    <string name="light_scene_mode_4">Lampu malam</string>
+    <string name="light_scene_mode_5">Panggung</string>
+    <string name="light_scene_mode_6">Lampu bernapas - warna</string>
+    <string name="light_scene_mode_7">Lampu bernapas - merah</string>
+    <string name="light_scene_mode_8">Lampu bernapas - hijau</string>
+    <string name="light_scene_mode_9">Lampu bernapas - biru</string>
+    <string name="light_scene_mode_10">Menghijau</string>
+    <string name="light_scene_mode_11">Matahari Terbenam</string>
+    <string name="light_scene_mode_12">Irama</string>
+
+    <string name="color">Warna</string>
+    <string name="light_flash_quick">Kerlip cepat</string>
+    <string name="light_flash_slow">Kerlip lambat</string>
+    <string name="light_flash_slower">Kerlip sangat lambat</string>
+    <string name="light_flash_music">Kerlip irama</string>
+    <string name="light_color_collect">Warna tersimpan</string>
+    <string name="light_flash">Kerlip warna</string>
+    <string name="light_flash_freq">Tingkat kerlip</string>
+
+    <string name="light_model_1">Kerlip pelangi</string>
+    <string name="light_model_2">Kerlip merah</string>
+    <string name="light_model_3">Kerlip oranye</string>
+    <string name="light_model_4">Kerlip kuning</string>
+    <string name="light_model_5">Kerlip hijau</string>
+    <string name="light_model_6">Kerlip sian</string>
+    <string name="light_model_7">Kerlip biru</string>
+    <string name="light_model_8">Kerlip ungu</string>
+    <string name="light_color_temperature_cold">Dingin</string>
+    <string name="light_color_temperature_warm">Hangat</string>
+    <string name="light_color_temperature_gray">Abu-abu</string>
+    <string name="light_color_temperature_colorful">Cerah</string>
+    <string name="light_color_temperature_dark">Gelap</string>
+    <string name="light_color_temperature_sun">Cerah</string>
+    <string name="light_color_temperature_cold_white">Putih dingin</string>
+    <string name="light_color_temperature_natural_light">Cahaya alami</string>
+    <string name="light_color_temperature_bright">Terang</string>
+    <string name="light_color_temperature_sunset">Matahari terbenam</string>
+    <string name="light_color_temperature_candlelight">Lilin</string>
+
+    <!--Search Device-->
+    <string name="play_sound">Putar</string>
+    <string name="close_play">Bisukan</string>
+    <string name="connected_device_time_tips">Penggunaan terakhir: sekarang</string>
+    <string name="last_time_tips">Penggunaan terakhir: %1$s</string>
+    <string name="distance_m">%1$s m</string>
+    <string name="distance_km">%1$s km</string>
+    <string name="my_location">Lokasi saya</string>
+    <string name="search_phone">Mencari telepon saya</string>
+    <string name="search_device_tips">\t\tSaat mencari perangkat, earbud akan berbunyi bip dengan volume maksimal, pastikan Anda tidak memakainya untuk menghindari kerusakan pendengaran.</string>
+    <string name="device_no_location_info">Tidak dapat memperoleh lokasi</string>
+    <string name="today">Hari ini</string>
+    <string name="tomorrow">Besok</string>
+    <string name="yesterday">Kemarin</string>
+    <string name="play_way_all">Putar semua</string>
+    <string name="play_way_left">Putar sisi kiri saja</string>
+    <string name="play_way_right">Putar sisi kanan saja</string>
+
+    <!--    Network Radio-->
+    <string name="fm_type_local">FM Lokal</string>
+    <string name="fm_type_country">FM Nasional</string>
+    <string name="fm_type_province">FM Provinsi</string>
+    <string name="fm_type_mycollect">Favorit saya</string>
+    <string name="loading">Memuat</string>
+    <string name="loading_failed">Gagal memuat</string>
+    <string name="manage">Kelola</string>
+    <string name="msg_error_switch_mode">Gagal beralih mode</string>
+    <string name="empty_folder">Folder kosong</string>
+    <string name="empty_list_change_to_local">Daftar putar saat ini kosong, dialihkan ke daftar FM lokal</string>
+    <string name="resource_not_available">Sumber daya saat ini tidak tersedia.</string>
+    <string name="resource_not_available_next">Sumber daya saat ini tidak tersedia, pindah ke saluran berikutnya</string>
+    <string name="resource_not_available_prev">Sumber daya saat ini tidak tersedia, pindah ke saluran sebelumnya</string>
+
+
+    <!--Test-->
+    <string name="test_configuration">Konfigurasi tes</string>
+    <string name="save_configuration">Simpan konfigurasi</string>
+    <string name="use_device_auth">Konfirmasi untuk mengaktifkan otorisasi perangkat?</string>
+    <string name="support_show_product_dialog">Konfirmasi untuk mengaktifkan jendela pop-up?</string>
+    <string name="support_local_ota">Konfirmasi untuk mengaktifkan OTA lokal?</string>
+    <string name="show_dialog_rssi_tips">Sensitivitas jendela pop-up:</string>
+    <string name="rssi_unit">dBm</string>
+    <string name="input_rssi_hint">Harap masukkan nilai RSSI yang diinginkan [-100~0]dBm</string>
+    <string name="local_ota_desc">File path is C:\\Users\\MyDevice</string>
+    <string name="test_custom_cmd">Tes perintah kustom</string>
+    <string name="rssi_over_limit">Parameter RSSI tidak dalam rentang yang sah</string>
+    <string name="click_again_to_test_configuration">Harap ketuk lagi untuk masuk ke konfigurasi tes</string>
+    <string name="save_configuration_success">Konfigurasi disimpan, keluar dari aplikasi</string>
+    <string name="sound_card_eq_title">Efek suara mikrofon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="fitting_results">Hasil penyesuaian</string>
+    <string name="left_ear_threshold_mean">Rata-rata ambang pendengaran telinga kiri</string>
+    <string name="right_ear_threshold_mean">Rata-rata ambang pendengaran telinga kanan</string>
+    <string name="written_to_the_device">Ditulis ke perangkat</string>
+    <string name="make_sure_write_fitting">Pastikan untuk menulis data alat bantu dengar？</string>
+    <string name="keep_fitting_record">Simpan catatan penyesuaian</string>
+    <string name="write_saved_successfuly">Berhasil disimpan</string>
+    <string name="write_saved_failed">Gagal menyimpan</string>
+    <string name="db_hl">Ambang pendengaran/dB HL</string>
+    <string name="freq_hz">Frekuensi/Hz</string>
+    <string name="left_ear">Telinga kiri</string>
+    <string name="right_ear">Telinga kanan</string>
+    <string name="go_for_fitting">Mulai penyesuaian</string>
+    <string name="detect_hearing_impairment">Deteksi gangguan pendengaran</string>
+    <string name="fitting_records">Catatan penyesuaian</string>
+    <string name="back_last_step">Kembali</string>
+    <string name="can_not_hear">Tidak bisa mendengar</string>
+    <string name="hear">Dengar</string>
+    <string name="restart">Mulai Ulang</string>
+    <string name="continue_str">Lanjutkan</string>
+    <string name="check_no_finish_record">Ada catatan tes yang belum selesai. Apakah Anda ingin melanjutkan?</string>
+    <string name="save_operation">Ya</string>
+    <string name="no_save_operation">Tidak</string>
+    <string name="check_exitt_fitting">Terdeteksi keluar, apakah Anda ingin menyimpan catatan saat ini untuk melanjutkan tes lain kali?</string>
+    <string name="please_prepare_for_the_following_tests">Harap persiapkan untuk tes berikut</string>
+    <string name="fitting_prepare_step_1">Harap kenakan alat bantu dengar Anda \nPilih tempat yang tenang untuk memulai.</string>
+    <string name="fitting_prepare_step_2">Saat Anda mendengar suara \“Di \” di headset, klik "dengar";\n Jika Anda tidak bisa mendengar apa-apa, klik "Tidak bisa mendengar" </string>
+    <string name="i_know_it_2">Saya tahu.</string>
+    <string name="fitting">Penyesuaian</string>
+    <string name="hearing_aid_fitting">Penyesuaian alat bantu dengar</string>
+    <string name="select_fitting_gain_type">Silakan pilih alat bantu dengar yang akan diuji.</string>
+    <string name="left_ear_single">Kiri</string>
+    <string name="right_ear_single">Kanan</string>
+    <string name="both_ear_single">Keduanya</string>
+    <string name="both_ear">Kedua telinga</string>
+    <string name="both_ear_fitting">Penyesuaian kedua telinga</string>
+    <string name="left_ear_fitting">Penyesuaian telinga kiri</string>
+    <string name="right_ear_fitting">Penyesuaian telinga kanan</string>
+    <string name="left_ear_fitting_result">Hasil penyesuaian telinga kiri</string>
+    <string name="right_ear_fitting_result">Hasil penyesuaian telinga kanan</string>
+    <string name="both_ear_fitting_result">Hasil penyesuaian kedua telinga</string>
+    <string name="is_save_to_fitting_record">Apakah akan disimpan ke catatan penyesuaian？</string>
+    <string name="fitting_record_too_long">Nama terlalu panjang. Harap batasi hingga 20 karakter</string>
+
+    <!--TestExtFlashActivity-->
+    <!--<string name="test_ext_flash">Tes Sistem File FAT</string>
+    <string name="add_file_path_err">Pengecualian jalur file, silakan pilih lagi</string>
+    <string name="create_file_progress">Menambahkan file[%1$s],kemajuan:%2$d</string>
+    <string name="create_fat_file_success">File[%1$s] berhasil ditambahkan.Waktu yang Digunakan : %2$s, Kecepatan:%3$.1f kb/s</string>
+    <string name="create_fat_file_failed">Gagal menambahkan file[%1$s],alasan:%2$d</string>
+    <string name="delete_fat_file_tips">Hapus file[%1$s] atau tidak?</string>
+    <string name="deleting_fat_file">Menghapus…</string>
+    <string name="delete_fat_file_success">File[%1$s] berhasil dihapus.Waktu yang Digunakan : %2$s</string>
+    <string name="delete_fat_file_failed">File[%1$s] gagal dihapus, alasan:%2$d</string>
+    <string name="log_message">Pesan Logcat</string>
+    <string name="recovery_fat_system">Memulihkan…</string>
+    <string name="recovery_system_success">Sistem berhasil dipulihkan</string>
+    <string name="recovery_system_failed">Kegagalan sistem pemulihan, alasan : %1$d</string>
+    <string name="write_protect_begin">Perlindungan tulis dimulai</string>
+    <string name="delete_fat_file_warning">Tidak kurang dari 2 file fat</string>
+    <string name="updating_fat_resource">Memperbarui…</string>-->
+
+</resources>

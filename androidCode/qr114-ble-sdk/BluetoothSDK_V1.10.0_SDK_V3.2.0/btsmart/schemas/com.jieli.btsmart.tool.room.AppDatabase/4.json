@@ -1,0 +1,379 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "cc728eb4d182deb9156ad0e36b57527f",
+    "entities": [
+      {
+        "tableName": "FMCollectInfoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `btDeviceAddress` TEXT, `mode` INTEGER NOT NULL, `freq` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "btDeviceAddress",
+            "columnName": "btDeviceAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mode",
+            "columnName": "mode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "freq",
+            "columnName": "freq",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "NetRadioInfoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`radioInfoId` TEXT NOT NULL, `uuid` TEXT, `placeId` TEXT, `name` TEXT, `icon` TEXT, `stream` TEXT, `description` TEXT, `updateTime` TEXT, `explain` TEXT, `collectState` INTEGER NOT NULL, PRIMARY KEY(`radioInfoId`))",
+        "fields": [
+          {
+            "fieldPath": "radioInfoId",
+            "columnName": "radioInfoId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "placeId",
+            "columnName": "placeId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icon",
+            "columnName": "icon",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stream",
+            "columnName": "stream",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "updateTime",
+            "columnName": "updateTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "explain",
+            "columnName": "explain",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectState",
+            "columnName": "collectState",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "radioInfoId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "UserEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `userName` TEXT, `password` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userName",
+            "columnName": "userName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "password",
+            "columnName": "password",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "userId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "NetRadioCollectAndUserEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userId` INTEGER NOT NULL, `radioInfoId` TEXT NOT NULL, PRIMARY KEY(`userId`, `radioInfoId`))",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "radioInfoId",
+            "columnName": "radioInfoId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "userId",
+            "radioInfoId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_NetRadioCollectAndUserEntity_radioInfoId",
+            "unique": false,
+            "columnNames": [
+              "radioInfoId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_NetRadioCollectAndUserEntity_radioInfoId` ON `${TABLE_NAME}` (`radioInfoId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "NetRadioPlayInfoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`radioInfoId` TEXT NOT NULL, `id` INTEGER NOT NULL, `title` TEXT NOT NULL, `album` TEXT, `duration` INTEGER NOT NULL, `size` INTEGER NOT NULL, `artist` TEXT, `url` TEXT, `coverUrl` TEXT, `selected` INTEGER NOT NULL, `collect` INTEGER NOT NULL, `local` INTEGER NOT NULL, `download` INTEGER NOT NULL, `listType` INTEGER NOT NULL, `auth` TEXT, `position` INTEGER NOT NULL, PRIMARY KEY(`title`))",
+        "fields": [
+          {
+            "fieldPath": "radioInfoId",
+            "columnName": "radioInfoId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "album",
+            "columnName": "album",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "duration",
+            "columnName": "duration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "size",
+            "columnName": "size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "artist",
+            "columnName": "artist",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coverUrl",
+            "columnName": "coverUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "selected",
+            "columnName": "selected",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collect",
+            "columnName": "collect",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "local",
+            "columnName": "local",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "download",
+            "columnName": "download",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "listType",
+            "columnName": "listType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "auth",
+            "columnName": "auth",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "title"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "tb_fitting_record",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `recordKey` TEXT, `recordName` TEXT, `time` INTEGER NOT NULL, `version` INTEGER NOT NULL, `channelsNum` INTEGER NOT NULL, `gainsType` INTEGER NOT NULL, `channelsFreqs` TEXT, `leftChannelsValues` TEXT, `rightChannelsValues` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordKey",
+            "columnName": "recordKey",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "recordName",
+            "columnName": "recordName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "channelsNum",
+            "columnName": "channelsNum",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gainsType",
+            "columnName": "gainsType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "channelsFreqs",
+            "columnName": "channelsFreqs",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "leftChannelsValues",
+            "columnName": "leftChannelsValues",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rightChannelsValues",
+            "columnName": "rightChannelsValues",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'cc728eb4d182deb9156ad0e36b57527f')"
+    ]
+  }
+}

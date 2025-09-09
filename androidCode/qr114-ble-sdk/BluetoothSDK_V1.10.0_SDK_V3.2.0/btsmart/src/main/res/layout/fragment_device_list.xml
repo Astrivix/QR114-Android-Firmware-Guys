@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This is the new, single layout for your device list.
+  It uses ConstraintLayout for modern, flexible positioning.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_device_list_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".ui.device.DeviceListFragment">
+
+    <!-- The "Add Device" button is now the anchor at the bottom -->
+    <Button
+        android:id="@+id/addDeviceButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_background"
+        android:drawableStart="@drawable/ic_light_color_add"
+        android:drawablePadding="8dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/add_device"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- The list now correctly fills the space ABOVE the button -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_device_list_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/addDeviceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- The "No Network" banner remains at the bottom, overlaying everything -->
+    <TextView
+        android:id="@+id/tv_device_list_no_network"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_FFDEDE"
+        android:drawablePadding="10dp"
+        android:paddingStart="24dp"
+        android:paddingTop="13dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="13dp"
+        android:text="@string/no_network"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_13sp"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_no_network"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

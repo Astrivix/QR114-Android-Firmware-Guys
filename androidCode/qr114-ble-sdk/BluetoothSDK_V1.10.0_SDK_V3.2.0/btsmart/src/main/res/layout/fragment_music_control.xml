@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="16dp"
+    tools:background="@color/music_controller_green"
+    tools:context="com.astrivix.qr114.ui.multimedia.control.MusicControlFragment">
+
+    <!-- Quran Icon from the old design is now hidden -->
+    <ImageView
+        android:id="@+id/iv_quran_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_quran_book"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="ic_quran_book"/>
+
+    <!-- NEW: TextView for the Reciter's Name -->
+    <TextView
+        android:id="@+id/tv_reciter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Abdur-Rahman As-Sudais" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_reciter_name"
+        tools:text="002-Al-Baqarah" />
+
+    <SeekBar
+        android:id="@+id/sb_music"
+        style="@style/common_seek_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:progress="30" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music_time_default"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/sb_music"
+        app:layout_constraintTop_toBottomOf="@id/sb_music"
+        tools:text="0:53:41" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music_time_default"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/sb_music"
+        app:layout_constraintTop_toBottomOf="@id/sb_music"
+        tools:text="0:46:26" />
+
+    <!-- Control Buttons remain the same, constrained for new layout -->
+    <ImageButton
+        android:id="@+id/ib_playmode"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_playmode_random_selector"
+        app:layout_constraintEnd_toStartOf="@id/ib_playlast"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_start_time"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/ib_playlast"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_play_last_selector"
+        app:layout_constraintEnd_toStartOf="@id/ib_play_or_pause"
+        app:layout_constraintStart_toEndOf="@id/ib_playmode"
+        app:layout_constraintTop_toTopOf="@id/ib_playmode"
+        app:tint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/ib_play_or_pause"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_play_status_selector"
+        app:layout_constraintEnd_toStartOf="@id/ib_playnext"
+        app:layout_constraintStart_toEndOf="@id/ib_playlast"
+        app:layout_constraintTop_toTopOf="@id/ib_playmode"
+        app:tint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/ib_playnext"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_play_next_selector"
+        app:layout_constraintEnd_toStartOf="@id/ib_playlist"
+        app:layout_constraintStart_toEndOf="@id/ib_play_or_pause"
+        app:layout_constraintTop_toTopOf="@id/ib_playmode"
+        app:tint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/ib_playlist"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_player_list_resiters"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_playnext"
+        app:layout_constraintTop_toTopOf="@id/ib_playmode"
+        app:tint="@color/white"/>
+
+    <!-- This view is not used visually, kept for compatibility -->
+    <com.google.android.material.internal.BaselineLayout
+        android:id="@+id/line_music"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/ib_playmode"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

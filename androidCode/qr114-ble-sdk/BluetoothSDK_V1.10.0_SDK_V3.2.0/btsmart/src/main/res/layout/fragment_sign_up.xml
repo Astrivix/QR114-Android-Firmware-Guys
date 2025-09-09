@@ -1,0 +1,333 @@
+<!--
+  FIX APPLIED:
+  1.  The root element is now a <ScrollView>. Just like with the login screen, this makes
+      all the content scrollable when the keyboard appears, fixing the issue of hidden input fields.
+
+  2.  The ScrollView has `android:fillViewport="true"` to ensure the layout looks good
+      on taller screens by stretching to fill the space.
+
+  3.  Your original ConstraintLayout is now inside the ScrollView, and its height has been
+      changed from "match_parent" to "wrap_content". This is the key change that allows scrolling.
+
+  NO other changes were made to your UI elements or their styling.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background_dark"
+    tools:context=".ui.launcher.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <!-- Header Content (Unchanged) -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/qr114_logo_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+android:text="@string/signup_title"
+            android:textColor="@color/text_primary_light"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+android:text="@string/signup_subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary_light"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+
+        <!-- Custom Serial Number Input Field (Unchanged) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/serialInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_background_selector"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitleText">
+
+            <ImageView
+                android:id="@+id/serialIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/icon_tint_selector"
+                android:duplicateParentState="true"/>
+
+            <EditText
+                android:id="@+id/serialEditText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@null"
+                android:hint="@string/serial_number_hint"
+                android:textColor="@color/text_primary_light"
+                android:textColorHint="@color/text_secondary_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/serialIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAllCaps="true"
+                android:maxLength="17"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Custom Email Input Field (Unchanged) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background_selector"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/serialInputLayout">
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/icon_tint_selector"
+                android:duplicateParentState="true"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@null"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_primary_light"
+                android:textColorHint="@color/text_secondary_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/emailIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Custom Password Input Field (Unchanged) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_background_selector"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailInputLayout">
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:duplicateParentState="true"
+                android:src="@android:drawable/ic_lock_idle_lock"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/icon_tint_selector" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@null"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary_light"
+                android:textColorHint="@color/text_secondary_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/passwordToggle"
+                app:layout_constraintStart_toEndOf="@id/passwordIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/passwordToggle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/text_secondary_light" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/password_hint_msg"
+            android:textColor="@color/primary_green"
+            app:layout_constraintEnd_toEndOf="@+id/passwordInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/passwordInputLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout2" />
+
+        <!-- Custom Password Input Field (Unchanged) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/passwordInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background_selector"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputLayout">
+
+            <ImageView
+                android:id="@+id/passwordIcon2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:duplicateParentState="true"
+                android:src="@android:drawable/ic_lock_idle_lock"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/icon_tint_selector" />
+
+            <EditText
+                android:id="@+id/passwordEditText2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@null"
+                android:hint="@string/repassword_hint"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary_light"
+                android:textColorHint="@color/text_secondary_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/passwordToggle2"
+                app:layout_constraintStart_toEndOf="@id/passwordIcon2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/passwordToggle2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/text_secondary_light" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Bottom Content (Unchanged) -->
+
+        <TextView
+            android:id="@+id/termsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/terms_and_conditions"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary_light"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputLayout2" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/register_button"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/termsText" />
+
+        <!-- Add this ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/loginLinkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/signup_nav_to_login"
+            android:textColor="@color/primary_green"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/registerButton" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/email_hint_msg"
+            android:textColor="@color/primary_green"
+            app:layout_constraintEnd_toEndOf="@+id/emailInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/emailInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/emailInputLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

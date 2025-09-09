@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_dark"
+    tools:context="com.astrivix.qr114.ui.multimedia.MultimediaFragment">
+
+    <!-- Player Card (Stays at the Top) -->
+    <com.astrivix.qr114.ui.widget.color_cardview.CardView
+        android:id="@+id/cv_multimedia_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/player_green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+        <FrameLayout
+            android:id="@+id/fl_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </com.astrivix.qr114.ui.widget.color_cardview.CardView>
+
+    <!--
+        Device Info Card.
+        NOTE: This CardView has been repurposed for the new, simpler design.
+        The internal layout is changed, but all original view IDs are preserved.
+        Your Java logic in 'updateComplexDeviceCardView' should still work,
+        as it targets the child views by their original IDs.
+    -->
+    <com.astrivix.qr114.ui.widget.color_cardview.CardView
+        android:id="@+id/cv_complex_device_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_multimedia_container"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/reciter_item_background"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_complex_device_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+
+
+
+            <!-- Device Name (Using the original TextView) -->
+            <TextView
+                android:id="@+id/tv_device_list_left_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_device_list_status"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="QR114" />
+
+            <!-- Battery Status (Using the original TextView) -->
+            <!-- The Java code already sets a drawable and text, which is perfect for this. -->
+            <TextView
+                android:id="@+id/tv_device_list_left_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:drawableStart="@drawable/ic_charging"
+                tools:text="80%" />
+
+            <!-- Connection Status (Using the original TextView) -->
+
+            <!-- All other original views are kept but hidden to not affect the new layout. -->
+
+            <TextView
+                android:id="@+id/tv_device_list_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/edittext_border_green"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_device_list_left_quantity"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.461"
+                tools:text="Connected" />
+
+            <ImageView
+                android:id="@+id/iv_device_list_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_device_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="iv_device_list_left" />
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_device_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="iv_device_list_right,tv_device_list_right_name,tv_device_list_right_quantity" />
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_device_charging_bin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="iv_device_list_charging_bin,tv_device_list_charging_bin_name,tv_device_list_charging_bin_quantity" />
+            <ImageView
+                android:id="@+id/iv_device_list_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv_device_list_right_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv_device_list_right_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/iv_device_list_charging_bin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv_device_list_charging_bin_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv_device_list_charging_bin_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.astrivix.qr114.ui.widget.color_cardview.CardView>
+
+    <!-- Reciters List (This will show the single "Reciters" item) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_multimedia_function_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_complex_device_card"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="1"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_function_list" />
+
+    <!-- Center App Logo -->
+    <ImageView
+        android:id="@+id/iv_app_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/qr114_logo"
+        app:tint="@color/player_green"
+        android:layout_below="@id/rv_multimedia_function_list"
+        android:layout_above="@id/cl_volume_controller"/>
+
+    <!-- Volume Controller (Stays at the Bottom) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_volume_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="24dp"
+        android:visibility="invisible"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:id="@+id/iv_volume_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_speaker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_volume_control"
+            style="@style/common_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_volume_icon"
+            app:layout_constraintEnd_toStartOf="@id/tv_volume_percentage"
+            app:layout_constraintStart_toEndOf="@id/iv_volume_icon"
+            app:layout_constraintTop_toTopOf="@id/iv_volume_icon"
+            tools:progress="50"/>
+
+        <TextView
+            android:id="@+id/tv_volume_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_volume_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_volume_icon"
+            tools:text="50%" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Unused views are kept for code compatibility but are hidden. -->
+    <FrameLayout
+        android:id="@+id/fl_multimedia_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/view_home_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <com.astrivix.qr114.ui.widget.color_cardview.CardView
+        android:id="@+id/cv_multimedia_container_suspension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <FrameLayout
+            android:id="@+id/fl_control_suspension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.astrivix.qr114.ui.widget.color_cardview.CardView>
+
+</RelativeLayout>

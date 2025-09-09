@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1E"
+    tools:context=".ui.music.device.FilesFragment">
+
+    <!-- Header Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/list_item_background"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Back Button - Now positioned to the left -->
+        <ImageView
+            android:id="@+id/iv_back_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_back_white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Header Icon (Logo) - Now positioned next to the back button -->
+        <ImageView
+            android:id="@+id/iv_header_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_sd_card_green"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_back_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Header Title -->
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_header_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Reciters" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Old file path navigator (Kept as 'gone' as requested) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_file_path_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main File/Folder List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_device_files"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_container"
+        tools:itemCount="7"
+        tools:listitem="@layout/item_device_file" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

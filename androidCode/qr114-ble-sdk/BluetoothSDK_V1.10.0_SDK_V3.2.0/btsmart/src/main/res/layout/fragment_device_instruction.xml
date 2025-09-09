@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.app.DeviceInstructionFragment">
+
+    <!-- The WebView will replace the PhotoView. It's given the same ID. -->
+    <WebView
+        android:id="@+id/iv_device_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/view_device_instruction_no_data"
+        layout="@layout/view_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/view_device_instruction_no_network"
+        layout="@layout/view_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

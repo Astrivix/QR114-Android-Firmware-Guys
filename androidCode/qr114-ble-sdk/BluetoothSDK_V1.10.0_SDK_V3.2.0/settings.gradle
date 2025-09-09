@@ -1,0 +1,31 @@
+// settings.gradle
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        // Your China mirrors
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        // Your China mirrors
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' } // Warning: JCenter is deprecated
+        // Other repos
+        maven {
+            url 'https://raw.githubusercontent.com/xiaomi-passport/maven-repository/master/releases'
+        }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+
+    }
+}
+rootProject.name = "QR114" // Change this to your project's name
+include ':btsmart'

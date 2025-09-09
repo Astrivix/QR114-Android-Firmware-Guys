@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <!--Common-->
+    <string name="app_name">QR 114</string>
+    <string name="more">Daha Fazla</string>
+    <string name="allow">İzin Ver</string>
+    <string name="ban">Tekrar gösterme</string>
+    <string name="finish">Bitir</string>
+    <string name="it_is_ok">TAMAM!</string>
+    <string name="i_known">Anlaşıldı!</string>
+    <string name="app_is_running">Uygulama çalışıyor.</string>
+    <string name="none_data">Veri yok</string>
+    <string name="close">Kapat</string>
+    <string name="no_data">İçerik bulunamadı</string>
+    <!-- <string name="start_using">Kullanmaya başla</string>-->
+
+ <string name="email_hint_msg">Geçerli bir e-posta adresi girin</string>
+ <string name="patent_text">Cihaz Patenti Beklemede xxxxxxxxxxxxxxxx</string>
+ <string name="copyright_text">© 2025 RHKCL</string>
+ <string name="repassword_hint">Şifreyi Tekrar Girin</string>
+ <string name="forgot_password_hint_msg">Şifrenizi mi unuttunuz?</string>
+ <string name="reset_password">Şifreyi Sıfırla</string>
+ <string name="back_to_login">Girişe Geri Dön</string>
+ <string name="contact_upport">Destek ile İletişime Geç</string>
+ <string name="reset_password_subtitle">Şifrenizi sıfırlamak için bilgilerinizi girin</string>
+
+
+ <string name="back">geri</string>
+    <string name="cancel">İptal</string>
+    <string name="confirm">Onayla</string>
+    <string name="double_tap_to_exit">Çıkmak için tekrar basın</string>
+    <string name="exit">çıkış</string>
+    <string name="mobile_network_tip">Mobil ağ kullanılıyor</string>
+    <string name="network_error_tip">Ağda bir sorun var gibi görünüyor. Lütfen ağı kontrol edin</string>
+    <string name="none_network_tip">Ağ açık değil, lütfen ağı açın</string>
+    <string name="ok">EVET</string>
+    <string name="tips">ipucu</string>
+    <string name="to_setting">ayarlara git</string>
+    <style name="Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+ <string name="current_password">Mevcut Şifre</string>
+ <string name="new_password">Yeni Şifre</string>
+ <string name="confirm_new_password">Yeni Şifreyi Onayla</string>
+ <string name="update_password">Şifreyi Güncelle</string>
+ <string name="profile">Profil</string>
+ <string name="change_password">Şifreyi Değiştir</string>
+ <string name="rename_device">Cihazı Yeniden Adlandır</string>
+ <string name="delete_device">Cihazı Sil</string>
+ <string name="change_name_guide_text">Kullan: Harfler (A-Z), sayılar (0-9), boşluklar, - _ . ( ). Kaçının: boşluklardan, özel karakterlerden</string>
+
+
+    <string name="qr114" translatable="false">QR 114</string>
+    <string name="new_version_available" >Yeni Sürüm Mevcut</string>
+    <string name="update_file_ready" translatable="false">Güncelleme Dosyası Hazır</string>
+    <string name="download_completed" translatable="false">İndirme Tamamlandı</string>
+
+    <!-- Log In Screen -->
+ <string name="login_title" >Giriş Yap</string>
+    <string name="login_subtitle" translatable="false">Giriş yapmak için e-posta ve şifrenizi\ngirin</string>
+    <string name="login_button" translatable="false">Giriş Yap</string>
+    <string name="login_nav_to_signup" translatable="false">Hesabınız yok mu? <b>Kaydolun</b></string>
+ <string name="logout">Çıkış Yap</string>
+ <string name="home">Ana Sayfa</string>
+ <string name="confirm_text">Onayla</string>
+ <string name="cancel_text">İptal</string>
+
+    <!-- Sign Up / Registration Screen -->
+    <string name="signup_title" translatable="false">Ürün Kaydı</string>
+    <string name="signup_subtitle" translatable="false">Kurulumu tamamlamak için seri numarasını, e-postayı ve şifreyi girin. Şifre en az 8 karakter uzunluğunda olmalıdır</string>
+    <string name="serial_number_hint" translatable="false">Seri Numarası</string>
+    <string name="email_hint" translatable="false">E-posta</string>
+    <string name="password_hint" translatable="false">Şifre</string>
+    <string name="register_button" translatable="false">Kaydol</string>
+    <string name="signup_nav_to_login" translatable="false"><b>Zaten bir hesabınız var mı?</b></string>
+    <string name="terms_and_conditions" translatable="false">Devam ederek, RigidMeds Canada INC.in <b>Lisanslama, Şartlar ve Koşullarını</b> ve <b>Gizlilik Politikasını</b> okuduğumu ve kabul ettiğimi onaylıyorum.</string>
+   <string name="password_hint_msg">Şifre en az 8 karakter uzunluğunda olmalıdır</string>
+   <!--Network-->
+    <string name="no_network">Ağ bağlantısı yok, lütfen ağınızı kontrol edin</string>
+    <string name="network_exception">Ağ Hatası</string>
+    <string name="network_exception_tips">Lütfen ağ bağlantınızı kontrol edip tekrar deneyin</string>
+
+    <!--Permission-->
+    <string name="open_gpg_tip">GPS izni gerekli, lütfen konum servisine erişime izin verin</string>
+    <string name="permissions_tips_01">Bu uygulamayı normal şekilde kullanabilmek için lütfen</string>
+    <string name="permission_contacts">Kişileri okuma ve yazma izni verin</string>
+    <string name="permission_mic">Mikrofona erişim izni verin</string>
+    <string name="permission_read_phone_state">Telefon bilgilerine erişim izni verin</string>
+    <string name="permission_location">Konuma erişim izni verin</string>
+    <string name="permission_storage">Dosyaları okuma ve yazma izni verin</string>
+    <string name="permission_bluetooth">Bluetootha erişim izni verin</string>
+    <string name="permission_phone_settings">Telefon ayarlarını değiştirme izni verin</string>
+    <string name="permissions_tips_02">Lütfen sistem ayarlarını açın ve bu uygulamaya izin verin</string>
+    <string name="permission">izin</string>
+
+    <!--Device state-->
+    <string name="first_connect_device">Lütfen önce cihazı bağlayın</string>
+    <string name="unconnected_device">Bağlı Cihaz Yok</string>
+    <string name="unconnected_device_tips">Bağlı cihaz yok, lütfen önce cihaz bağlayın veya ekleyin</string>
+    <string name="connectable_devies">Bağlanılabilecek cihazlar</string>
+    <string name="disconnect_device">Cihazın bağlantısını kes</string>
+
+    <string name="msg_read_file_err_reading">Cihaz meşgul, lütfen tekrar deneyin</string>
+    <string name="msg_read_file_err_offline">Cihaz çevrimdışı</string>
+    <string name="msg_call_tip">Arama yapılıyor…</string>
+    <string name="no_support_reverberation">Mevcut cihazda Yankı desteklenmiyor</string>
+
+    <string name="bt_connecting">Bağlanıyor</string>
+    <string name="device_status_unconnected">Bağlantı Kesildi</string>
+    <string name="device_status_connected">Bağlı</string>
+    <string name="device_status_using">Şu anda kullanımda</string>
+    <string name="device_status_mandatory_upgrade">Güncelleme gerekli</string>
+    <string name="connect_device">Bir cihaz bağla</string>
+    <string name="connect_tip">Bağlantı</string>
+    <string name="device_connecting">Bağlanıyor…</string>
+    <string name="bt_connect_failed">Bağlanamadı</string>
+    <string name="device_status_reconnect">Yeniden bağlanılıyor</string>
+
+    <!--LauncherActivity-->
+    <string name="privacy_policy">Gizlilik politikası</string>
+    <string name="user_agreement">Kullanıcı sözleşmesi</string>
+    <string name="agree_with">Kabul ediyorum</string>
+    <string name="dialog_tips">Hatırlatma</string>
+    <string name="user_service_tips">\t\t%1$s UYGULAMASINA hoş geldiniz. Kullandığınızda, veri ağına veya WLAN operatörüne bağlanmanız gerekir. Trafik maliyeti için lütfen yerel operatörünüze danışın. Gizliliğinizin ve kişisel bilgilerinizin korunmasına büyük önem veriyoruz.</string>
+    <string name="user_service_tips2">%1$s UYGULAMASINI kullanmadan önce lütfen “Kullanıcı sözleşmesini” ve “Gizlilik politikasını” dikkatlice okuyun. Tüm şartları kabul ettikten sonra hizmetimizi kullanabilirsiniz.</string>
+    <string name="privacy_policy_name">“Gizlilik politikası”</string>
+    <string name="user_service_name">“Kullanıcı sözleşmesi”</string>
+    <string name="and">ve</string>
+    <string name="agree_and_use">Kabul et ve devam et</string>
+    <string name="not_agree_and_exit">Kabul etme ve çık</string>
+
+    <!--HomeActivity-->
+    <string name="tab_multimedia">Medya</string>
+    <string name="tab_home">Ana Sayfa</string>
+    <string name="tab_logout">Çıkış Yap</string>
+
+    <string name="tab_eq">Ekolayzer</string>
+    <string name="tab_device">Cihaz</string>
+    <string name="switch_classic_device_tips">Mevcut ses kaynağı çıkış cihazı [%1$s], kullanımda olan cihaz [%2$s] ile tutarsız. Kullanıcı deneyimini sağlamak için lütfen çıkışı [%3$s] olarak değiştirin</string>
+    <string name="add_device">Yeni Cihaz Ekle</string>
+
+
+    <!--DeviceFragment-->
+    <string name="my_devices">Cihazlarım</string>
+    <string name="pack_up">Daha Az Bilgi</string>
+    <string name="device_connecting_tips">Bağlanıyor, lütfen bekleyin…</string>
+    <string name="bluetooth_not_enable">Bluetooth KAPALI</string>
+    <string name="connect_device_over_limit">Maksimum Bluetooth cihaz sayısına ulaşıldı, lütfen sistem ayarlarından istenmeyen cihazların bağlantısını kesin</string>
+    <string name="background_show_activity_failed_tips">Arka plan etkinliği (açılır pencere) izni reddedildi, lütfen izin verin</string>
+    <string name="switch_device_tips">Cihaz değiştirme başarılı.</string>
+    <string name="device_not_using">Bu cihaz şu anda kullanılmıyor</string>
+    <string name="device_charging_bin">%1$s Şarj kutusu</string>
+    <string name="connect_history_failed_tips">Cihaz bulunamadı:[%1$s]</string>
+
+    <!--Multi media-->
+    <string name="multi_media_local">Yerel Medya</string>
+    <string name="multi_media_usb_drive">USB Sürücü</string>
+    <string name="multi_media_sd_card">SD Kart</string>
+    <string name="multi_media_fm_launch">FM Verici</string>
+    <string name="multi_media_fm_receive">FM Alıcı</string>
+    <string name="multi_media_line_in">AUX</string>
+    <string name="multi_media_light_settings">Işık Efektleri</string>
+    <string name="multi_media_alarm">Alarm</string>
+    <string name="multi_media_search_device">Cihazlarımı Bul</string>
+    <string name="multi_media_net_radio">Çevrimiçi Radyo</string>
+    <string name="multi_media_sound_card">Karaoke</string>
+
+    <!--Local music-->
+    <string name="none_music_data">Müzik dosyası bulunamadı, lütfen müzik ekleyin</string>
+    <string name="song_list_top_all_song">Tüm Müzikler</string>
+    <string name="song_list_top_song_num">(Toplam %1$d Şarkı)</string>
+    <string name="current_version">Mevcut sürüm</string>
+    <string name="local_music_none">Yerel müzik dosyası bulunamadı</string>
+
+    <!--Device Music-->
+    <string name="back_to_root">Şu anda kök dizindesiniz</string>
+    <string name="device_music">Cihazdaki Müzik</string>
+    <string name="switch_mode_success">%1$s Moduna geçildi </string>
+    <string name="msg_read_file_err_beyond_max_depth">Okunabilir derinliğin ötesinde</string>
+    <string name="sd_card">SD Kart</string>
+    <string name="udisk">USB Sürücü</string>
+
+    <!--ID3 Music-->
+    <string name="none_id3_music_data">ID3 bilgisi alınamadı</string>
+    <string name="other_music_player">(diğer müzik çalar uygulamasından)</string>
+
+    <!--FM Feature-->
+    <string name="search_forward">ileriye doğru ara</string>
+    <string name="search_all">tümünü ara</string>
+    <string name="search_backward">geriye doğru ara</string>
+    <string name="freq_point_collect">Kanalı kaydet</string>
+    <string name="freq_point_manage">Kanalı yönet</string>
+    <string name="net_radio">Çevrimiçi Radyo</string>
+    <string name="freq_point_collect_success">Kanal Kaydedildi</string>
+    <string name="freq_point_collect_existed">Kaydedildi</string>
+    <string name="freq_point">Frekans</string>
+    <string name="searching">Kanallar aranıyor…</string>
+    <string name="fm_value_no_change">FM Frekansı değişmedi</string>
+    <string name="fm_range">Frekans aralığı 87.5~108.0MHz</string>
+    <string name="fm_only_one_decimal">Frekans bir ondalık basamağa kadar doğrudur</string>
+    <string name="fm_no_decimal">Ondalık basamakta boş</string>
+
+    <!--Device Setting-->
+    <string name="setting">Ayar</string>
+    <string name="named">İsim</string>
+    <string name="device_name_over_limit">Cihaz adı çok uzun, sınır %1$d karakter</string>
+    <string name="not_support_tips">Özellik henüz desteklenmiyor</string>
+    <string name="tip_empty_device_name">İsim boş olmamalıdır</string>
+    <string name="tip_same_device_name">Cihaz adı değişmedi</string>
+    <string name="require_tws_info_error">Cihaz bilgileri alınamadı, tekrar almak için tıklayın</string>
+    <string name="retrieved">Alındı</string>
+
+    <!--OTA function-->
+    <string name="firmware_current_version">Mevcut sürüm</string>
+    <string name="found_new_version">Donanım yazılımı güncellemesi bulundu: %1$s</string>
+    <string name="new_version">Yeni donanım yazılımı güncellemesi: %1$s</string>
+    <string name="download_tips">indiriliyor</string>
+    <string name="upgrade_tips">Donanım yazılımı güncelleniyor</string>
+    <string name="upgrading_tips">Güncelleniyor</string>
+    <string name="upgrade_progress_prepare">Güncelleme hazır %1$s</string>
+    <string name="upgrade_progress_update">Güncelleniyor %1$s</string>
+    <string name="upgrade_warning">Donanım yazılımı güncelleniyor, lütfen Bluetooth ve ağ bağlantısını sürdürün, Bluetooth cihazını KAPATMAYIN veya ekranı kilitlemeyin</string>
+    <string name="upgrade_success">Güncelleme tamamlandı</string>
+    <string name="upgrade_failed">Güncelleme başarısız oldu</string>
+    <string name="upgrade_cancel">Güncelleme iptal edildi</string>
+    <string name="device_must_mandatory_upgrade">\t\t\t\tCihazın (%1$s) düzgün kullanılması için tam bir OTA gereklidir.</string>
+    <string name="network_err_tips">Sunucuya bağlanılamadı, lütfen ağı kontrol edin.</string>
+    <string name="double_click_to_disconnect">Geri düğmesine çift dokunmak cihazın bağlantısını kesecektir.</string>
+    <string name="upgrade_immediately">Şimdi güncelle</string>
+
+    <!--OTA error tips-->
+    <string name="ota_error_msg_receive_cmd_timeout">Komut alma zaman aşımına uğradı</string>
+    <string name="ota_error_msg_device_disconnected">Bluetooth bağlantısı kesildi</string>
+    <string name="ota_error_msg_error_param">Parametre hatası</string>
+    <string name="ota_error_msg_param_null">Parametre boş</string>
+    <string name="ota_error_msg_file_not_found">Dosya bulunamadı</string>
+    <string name="ota_error_msg_file_read_fail">Dosya okunamadı</string>
+    <string name="ota_error_msg_file_not_exist">Dosya mevcut değil</string>
+    <string name="ota_error_msg_bluetooth_not_connected">Bluetooth bağlantısı kesildi</string>
+    <string name="ota_error_msg_no_update_version">Güncelleme bulunamadı</string>
+    <string name="ota_error_msg_ota_is_continuing">OTA devam ediyor, lütfen işlem yapmayın</string>
+    <string name="ota_error_msg_device_not_connected">Cihaz bağlantısı kesildi</string>
+    <string name="ota_error_msg_response_empty">Yanıt boş</string>
+    <string name="ota_error_msg_data_length_error">Hata: veri uzunluğu</string>
+    <string name="ota_error_msg_response_status_error">Cihaz kötü bir durum yanıtladı: </string>
+    <string name="ota_error_msg_low_equipmeent">Cihaz pili çok düşük</string>
+    <string name="ota_error_msg_check_upgrade_file_failed">Hata: OTA dosyası doğrulaması başarısız oldu</string>
+    <string name="ota_error_msg_upgrade_file_version_no_change">Sürüm değişmedi</string>
+    <string name="ota_error_msg_tws_is_not_connected">TWS kulaklık bağlantısı kesildi</string>
+    <string name="ota_error_msg_headset_not_in_charging">Kulaklıklar kutuda değil</string>
+    <string name="ota_error_msg_enter_update_mode_failed">Hata: Cihaz güncelleme moduna giremedi</string>
+    <string name="ota_error_msg_offest_over_limit">Ofset sınırı aştı</string>
+    <string name="ota_error_msg_receive_error_data">Veri doğrulaması başarısız oldu</string>
+    <string name="ota_error_msg_upgrade_failed">Güncelleme başarısız oldu</string>
+    <string name="ota_error_msg_key_not_match">Hata: Anahtar doğrulaması başarısız oldu</string>
+    <string name="ota_error_msg_check_file_error">Hata: Veri doğrulaması başarısız oldu</string>
+    <string name="ota_error_msg_type_not_match">Hata: Güncelleme türü eşleşmiyor</string>
+    <string name="ota_error_msg_flash_read_error">Hata: Cihazın belleğini okuma/yazma başarısız oldu</string>
+    <string name="ota_error_msg_handler_cmd_timeout">Hata: Cihaz komut işleme zaman aşımına uğradı</string>
+    <string name="ota_error_msg_error_unkonwn">Hata: Bilinmeyen hata</string>
+    <string name="ota_error_msg_download_ota_file_failed">Hata: Güncelleme donanım yazılımı indirilemedi, mesaj:</string>
+    <string name="ota_error_msg_request_ota_file_failed">Hata: Güncelleme donanım yazılımı dosyası bilgisi istenemedi, mesaj:</string>
+    <string name="ota_error_msg_disconnect_tip">Güncelleme devam ediyor, lütfen bluetooth bağlantısını KESMEYİN</string>
+
+    <!--Product Design Dialog-->
+    <!--   <string name="device_paired_finish">Tamamlandı</string>-->
+    <string name="device_auto_connecting">Cihaz otomatik olarak yeniden bağlanıyor</string>
+    <string name="device_connectionless_tips">Lütfen cihazı eşleştirme moduna ayarlayın</string>
+    <string name="request_floating_window_permission_tips">Daha iyi bir kullanıcı deneyimi için, lütfen "diğer uygulamaların üzerinde gösterme" iznini verin</string>
+    <string name="scanning_ble_device">Cihazlar aranıyor…</string>
+    <string name="device_review">Cihazları görüntüle</string>
+    <string name="disconnect_device_tips">Cihaz bağlantısını kesmek istediğinizi onaylıyor musunuz?</string>
+    <string name="bt_connected_error_tip">[%1$s] başka bir cihaza bağlanıyor</string>
+    <string name="device_not_owner">Bu sizin cihazınız değil</string>
+    <string name="long_click_cancel_pair">Bağlanmak için lütfen şarj kutusu düğmesine uzun basın</string>
+    <string name="make_sure_headset_paired">Lütfen kulaklıkların eşleştirme modunda olduğunu onaylayın</string>
+    <string name="long_click_cancel_pair_soundbox">Bağlanmak için lütfen güç düğmesine uzun basın</string>
+    <string name="make_sure_soundbox_paired">Lütfen cihazın eşleştirme modunda olduğunu onaylayın</string>
+
+    <!--History Device-->
+    <string name="remove_history_device_failed">Cihaz yok sayılamadı</string>
+
+    <!--EQ function-->
+    <string name="eq_normal">Normal</string>
+    <string name="eq_rock">Rock</string>
+    <string name="eq_pop">Pop</string>
+    <string name="eq_classical">Klasik</string>
+    <string name="eq_jazz">Caz</string>
+    <string name="eq_country">Country</string>
+    <string name="eq_user">Özelleştir</string>
+    <string name="eq_advanced_setting">Gelişmiş ayar</string>
+    <string name="eq_advanced_reverberation">Yankı</string>
+    <string name="eq_advanced_dynamic">DRC</string>
+    <string name="eq_advanced_depth">Derinlik</string>
+    <string name="eq_advanced_strength">Kazanç</string>
+    <string name="current_volume">Mevcut ses seviyesi:</string>
+
+    <string name="eq_freq_16k">16k</string>
+    <string name="eq_freq_8k">8k</string>
+    <string name="eq_freq_4k">4k</string>
+    <string name="eq_freq_2k">2k</string>
+    <string name="eq_freq_1k">1k</string>
+    <string name="eq_freq_500">500</string>
+    <string name="eq_freq_250">250</string>
+    <string name="eq_freq_125">125</string>
+    <string name="eq_freq_63">63</string>
+    <string name="eq_freq_31">31</string>
+    <string name="eq_freq_12db">+8dB</string>
+    <string name="eq_freq_0db">0dB</string>
+    <string name="eq_freq_negative_12db">-8dB</string>
+    <string name="music_time_default">00:00</string>
+    <string name="product_default_quantity">100%</string>
+
+    <string name="volume_bass">Bas</string>
+    <string name="volume_main">Ana ses seviyesi</string>
+    <string name="volume_height">Tiz</string>
+    <string name="eq_reset">Sıfırla</string>
+    <string name="eq_preset">Ön Ayar</string>
+
+    <!--App Settings-->
+    <string name="shake_cut_song">sonraki şarkı için salla</string>
+    <string name="shake_change_light_color">ışık rengini değiştirmek için salla</string>
+    <string name="shake_change_light_color_note">Cihazın ışık ayarını desteklemesi gerekir</string>
+    <string name="about">Hakkında</string>
+    <string name="feedback">Geri Bildirim</string>
+    <string name="device_instructions">Cihaz kullanım kılavuzu</string>
+    <string name="multilingual">Diller</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="follow_system">Sistem varsayılan dilini kullan</string>
+    <string name="english">English</string>
+    //sasa edit
+
+    <string name="indonesian" translatable="false">Endonezce</string>
+    <string name="turkish" translatable="false">Türkçe</string>
+    <string name="malay" translatable="false">Malayca</string>
+    <string name="arabic" translatable="false">Arapça</string>
+
+
+    <string name="japanese">日本語</string>
+    <string name="set_language">Dil ayarı</string>
+
+    <!--About-->
+    <string name="app_version_name">Yazılım sürümü:%1$s</string>
+    <string name="app_version">UYGULAMA sürümü:%1$s</string>
+    <string name="firmware_version_name">Donanım yazılımı sürümü:%1$s</string>
+    <string name="check_update">Güncellemeyi kontrol et</string>
+    <string name="firmware_update">Donanım yazılımı güncellemesi</string>
+    <string name="laster_version">En son sürüm kullanılıyor</string>
+
+    <!--Device Function Settings-->
+    <string name="boot_up">Aç</string>
+    <string name="shut_down">Kapat</string>
+    <string name="music_pp">Oynat/Duraklat</string>
+    <string name="previous_song">Önceki</string>
+    <string name="next_song">Sonraki</string>
+    <string name="voice_inc">Ses+</string>
+    <string name="voice_dec">Ses-</string>
+    <string name="call_back">Son aramayı tekrar ara</string>
+    <string name="hang_up">Telefonu kapat</string>
+    <string name="answer_call">Telefonu aç</string>
+    <string name="ai_speech">Sesli komutu etkinleştir</string>
+    <string name="take_photo">Fotoğraf çek</string>
+    <string name="none">Yok</string>
+    <string name="bluetooth_name">Bluetooth adı</string>
+    <string name="work_mode">Çalışma modu</string>
+    <string name="mic_channel">Mikrofon</string>
+    <string name="led_settings">LED Ayarı</string>
+    <string name="in_ear_check">Takma algılama</string>
+    <string name="settings_failed">Ayar değiştirilemedi</string>
+    <string name="settings_failed_by_game_mode">Oyun modunda mikrofon kontrolü devre dışı</string>
+    <string name="settings_failed_dev_name_len_over_limit">Geçersiz ad veya uzunluk sınıra ulaştı</string>
+    <string name="settings_failed_led_settings">Bluetooth dışı modda LED Titremesi devre dışı</string>
+    <string name="device_name_change_tips">Bu değişiklik cihazın yeniden başlatılmasını gerektirir, şimdi yeniden başlatılsın mı?</string>
+    <string name="device_name_failure">Cihaz adı değiştirilemedi</string>
+    <string name="not_immediately_effective">Değişiklikler yeniden başlatıldıktan sonra uygulanacaktır</string>
+    <string name="immediately_effective">Şimdi uygula</string>
+    <string name="not_allow_settings_tip">Cihazın ayarlanmasına izin verilmiyor. Lütfen bağlantının eşleştirilmiş olup olmadığını onaylayın.</string>
+    <string name="remove_history_device_tips">Bu cihazı yok saymak istediğinizi onaylıyor musunuz?</string>
+    <string name="remove_history_device">Bu cihazı yok say</string>
+    <string name="modify_dev_name_tips">(Cihaz adı yanlış gösteriliyorsa lütfen cihazı yeniden bağlayın)</string>
+
+    <string name="noise_control">ANC Ayarı</string>
+    <string name="noise_mode_denoise">ANC AÇIK</string>
+    <string name="noise_mode_close">ANC KAPALI</string>
+    <string name="noise_mode_transparent">Şeffaf mod</string>
+    <string name="save">Kaydet</string>
+    <string name="noise_mode_desc_close">Gürültü engellemeyi devre dışı bırak</string>
+    <string name="noise_mode_desc_denoise">Ortam sesi sıkıştırması</string>
+    <string name="noise_mode_desc_transparent">Ortam sesinin geçişi</string>
+    <string name="enable">Etkinleştir</string>
+    <string name="input_valid_value_tips">Lütfen [%1$d,%2$d] arasında geçerli bir değer girin</string>
+    <string name="left_dev_denoise_value">Sol taraf ANC kazancı</string>
+    <string name="right_dev_denoise_value">Sağ taraf ANC kazancı</string>
+    <string name="left_dev_transparent_value">Sol taraf Şeffaf kazancı</string>
+    <string name="right_dev_transparent_value">Sağ taraf Şeffaf seviye/kazanç</string>
+    <string name="invalid_mode">Geçersiz mod</string>
+    <string name="unknown_mode">Bilinmeyen mod</string>
+    <string name="denoise_value">ANC kazancı</string>
+    <string name="transparent_value">Şeffaf kazanç</string>
+    <string name="maximum_tips">Maksimuma ulaşıldı</string>
+
+    <!--Adaptive ANC-->
+    <string name="adaptive_anc">Uyarlanabilir ANC</string>
+    <string name="adaptive_anc_desc">Kulak kanalı ve takma farklılıklarını telafi etmek ve gürültü azaltma performansını artırmak için ANC uyarlanabilir algoritmasını açın</string>
+    <string name="enable_adaptive_anc_tips">Mevcut bir uyarlanabilir gürültü azaltma şeması kullanılsın mı?</string>
+    <string name="redetect">Yeniden uyarla</string>
+    <string name="enable_now">Kullan</string>
+    <string name="monitoring">Yeniden uyarlanıyor</string>
+    <string name="adaptive_anc_failure">Uyarlama başarısız oldu</string>
+    <string name="adaptive_anc_failure_tips">Lütfen yutkunmaktan, konuşmaktan, yürümekten, başınızı sallamaktan vb. kaçının.</string>
+    <string name="give_up">vazgeç</string>
+    <string name="retry">tekrar dene</string>
+
+    <!--Voice Function-->
+    <string name="smart_no_pick">Akıllı Çıkarmama</string>
+    <string name="smart_no_pick_tips">Kulaklık konuştuğunuzu algıladığında, kulaklığı çıkarmadan otomatik olarak konuşma koşulları oluşturur.</string>
+    <string name="voice_check_sensitivity">Ses Algılama Hassasiyeti</string>
+    <string name="close_time">Başladıktan Sonra Kapanma Süresi</string>
+    <string name="high_sensitivity">Yüksek Hassasiyet</string>
+    <string name="low_sensitivity">Düşük Hassasiyet</string>
+    <string name="high_level">Yüksek</string>
+    <string name="low_level">Düşük</string>
+    <string name="short_close_time">Kısa (5 Sn)</string>
+    <string name="standard_close_time">Standart (15 Sn)</string>
+    <string name="long_close_time">Uzun (30 Sn)</string>
+    <string name="none_close_time">Yok</string>
+    <string name="close_time_tips">Kulaklıklarınız belirtilen sürede sesinizi algılamazsa, normale dönmek için Akıllı Geçişi kapatın.</string>
+    <string name="short_time">Kısa</string>
+    <string name="standard_time">Standart</string>
+    <string name="long_time">Uzun</string>
+    <string name="none_time">Yok</string>
+    <string name="scene_denoising">Sahne Gürültü Azaltma</string>
+    <string name="scene_denoising_auto">Otomatik</string>
+    <string name="scene_denoising_auto_tips">Gürültü ortamına göre uyarlanabilir kontrol</string>
+    <string name="scene_denoising_mild">Hafif</string>
+    <string name="scene_denoising_mild_tips">Sessiz ofis ortamları için ideal</string>
+    <string name="scene_denoising_balance">Denge</string>
+    <string name="scene_denoising_balance_tips">Gürültülü ortamlar için uygun</string>
+    <string name="scene_denoising_depth">Derinlik</string>
+    <string name="scene_denoising_depth_tips">Çok gürültülü ortamlar için uygun</string>
+    <string name="wind_noise_detection">Rüzgar Gürültüsü Algılama</string>
+    <string name="wind_noise_detection_tips">Yüksek rüzgar gürültüsü altında, rüzgar gürültüsünün ANC üzerindeki etkisini azaltın.</string>
+    <string name="vocal_booster">Vokal Geliştirme</string>
+
+    <!--Double Connection-->
+    <string name="double_connection">Cihaz çift bağlantısı</string>
+    <string name="function_open">Açık</string>
+    <string name="function_close">Kapalı</string>
+    <string name="double_connection_open_tips">Açıldığında, kulaklıklar aynı anda iki cihazı bağlamayı destekleyebilir ve cihazlar arasında ses çıkışını kolayca değiştirebilir.</string>
+    <string name="connected_devices">Bağlı cihazlar</string>
+    <string name="native_dev">Yerel</string>
+    <string name="close_double_connection_tips">Çift cihaz bağlantısını kapatmak istediğinizden emin misiniz?</string>
+    <string name="close_double_connection_content">Kapatıldıktan sonra, kulaklıkların %1$s ile bağlantısı kesilecektir.</string>
+
+    <!--Feedback-->
+    <string name="tips_input_right_phone">Lütfen doğru telefon numarasını girin</string>
+    <string name="tips_input_phone">Lütfen telefon numarasını girin</string>
+    <string name="tips_input_feedback">Lütfen geri bildirim içeriğini girin</string>
+    <string name="feedback_type">Geri bildirim türü</string>
+    <string name="problem_feedback">Sorun geri bildirimi</string>
+    <string name="please_input_feedback">Lütfen geri bildiriminizi ayrıntılı olarak girin</string>
+    <string name="please_input_phone">İletişim için lütfen telefon numaranızı girin</string>
+    <string name="commit">Gönder</string>
+
+    <!--Alarm-->
+    <string name="alarm_open_success">Alarm etkinleştirildi</string>
+    <string name="alarm_open_failure">Alarm etkinleştirilemedi</string>
+    <string name="alarm_close_success">Alarm kapatıldı</string>
+    <string name="alarm_close_failure">Alarm kapatılamadı</string>
+    <string name="operate_alarm_failure">Alarm işletilemedi</string>
+    <string name="alarm_list_read_failed">Alarm listesi yüklenemedi</string>
+    <string name="delete">Sil</string>
+    <string name="alarm_set_num_is_full">Alarm listesi sınıra ulaştı</string>
+    <string name="alarm_delete_failure">Alarm silinemedi</string>
+    <string name="alarm_delete_success">Alarm silindi</string>
+
+    <string name="alarm_stop_success">Alarm durduruldu</string>
+    <string name="alarm_stop_failed">Alarm durdurulamadı</string>
+    <string name="alarm_delete">Alarmı sil</string>
+    <string name="sync_time">Zaman senkronizasyonu</string>
+    <string name="sync_time_success">Zaman senkronize edildi</string>
+    <string name="sync_time_failed">Zaman senkronize edilemedi</string>
+
+    <string name="save_alarm_failed_no_modify">Alarm değişmedi</string>
+    <string name="save_alarm_failed">Alarm kaydedilemedi</string>
+    <string name="save_alarm_success">Alarm kaydedildi</string>
+    <string name="choose_repeat_mode_tip">Lütfen mod seçin</string>
+    <string name="alarm_name_can_not_be_empty">Alarm adı boş olamaz</string>
+    <string name="alarm_name_length_too_long">Alarm adı çok uzun</string>
+    <string name="alarm_name_format_error">Hata: alarm adı giriş formatı</string>
+    <string name="default_alarm_name">Alarm</string>
+    <string name="default_alarm_custom">Özelleştir</string>
+    <string name="alarm_edit_title">Alarmı düzenle</string>
+    <string name="alarm_create_title">Yeni alarm</string>
+    <string name="alarm_repeat_on_workday">Pzt - Cum</string>
+    <string name="alarm_repeat_every_day">Her gün</string>
+    <string name="alarm_repeat_single">Bir kez</string>
+    <string name="alarm_repeat_week">Hafta</string>
+    <string name="alarm_repeat_mon">Pazartesi </string>
+    <string name="alarm_repeat_tue">Salı  </string>
+    <string name="alarm_repeat_wed">Çarşamba </string>
+    <string name="alarm_repeat_thu">Perşembe </string>
+    <string name="alarm_repeat_fri">Cuma </string>
+    <string name="alarm_repeat_sat">Cumartesi </string>
+    <string name="alarm_repeat_sun">Pazar</string>
+    <string name="alarm_repeat_simple_mon">Pzt</string>
+    <string name="alarm_repeat_simple_tue">Sal</string>
+    <string name="alarm_repeat_simple_wed">Çar</string>
+    <string name="alarm_repeat_simple_thu">Per</string>
+    <string name="alarm_repeat_simple_fri">Cum</string>
+    <string name="alarm_repeat_simple_sat">Cmt</string>
+    <string name="alarm_repeat_simple_sun">Paz</string>
+
+    <!--AlarmSettings-->
+    <string name="alarm_settings">Alarm yönetimi</string>
+    <string name="bell">Zil</string>
+    <string name="repeat">Tekrarla</string>
+    <string name="light">Işık</string>
+    <string name="alarm_state">Durum</string>
+    <string name="delete_alarm_tip">Lütfen bu alarmı silmek istediğinizi onaylayın\n</string>
+    <string name="stop_alarm">Durdur</string>
+    <string name="alarm_running">Alarm çalıyor</string>
+    <string name="unnamed">İsimsiz</string>
+
+    <string name="alarm_bell_1">Zil 1</string>
+    <string name="alarm_bell_2">Zil 2</string>
+    <string name="alarm_bell_3">Zil 3</string>
+    <string name="alarm_bell_4">Zil 4</string>
+    <string name="alarm_bell_5">Zil 5</string>
+    <string name="alarm_default_bell">Varsayılan</string>
+
+    <string name="alarm_bell_time">Alarm süresi</string>
+    <string name="min_format">%1$d dak</string>
+    <string name="alarm_bell_interval">Alarm aralığı</string>
+    <string name="bell_repeat_count_title">Tekrar sayısı</string>
+    <string name="bell_interal_time_title">Tekrar aralığı(dak）</string>
+    <string name="interval_format">%1$d dak,%2$d kez</string>
+    <string name="count_format">%1$d kez</string>
+
+
+    <!--    Light-->
+    <string name="light_control">Işık ayarı</string>
+    <string name="light_scene_mode">Profiller</string>
+    <string name="light_color_temperature">Renk Sıcaklığı</string>
+    <string name="light_coloured_lights">Işık rengi</string>
+    <string name="light_twinkle">Titreşim</string>
+    <string name="light_scene">Profil</string>
+    <string name="light_tip_open_switch">Lütfen ana şalteri AÇIK konuma getirin</string>
+    <string name="light_scene_mode_1">Gökkuşağı</string>
+    <string name="light_scene_mode_2">Kalp Atışı</string>
+    <string name="light_scene_mode_3">Mum</string>
+    <string name="light_scene_mode_4">Gece lambası</string>
+    <string name="light_scene_mode_5">Sahne</string>
+    <string name="light_scene_mode_6">Nefes alan ışık - renkler</string>
+    <string name="light_scene_mode_7">Nefes alan ışık - kırmızı</string>
+    <string name="light_scene_mode_8">Nefes alan ışık - yeşil</string>
+    <string name="light_scene_mode_9">Nefes alan ışık - mavi</string>
+    <string name="light_scene_mode_10">Yeşillenme</string>
+    <string name="light_scene_mode_11">Gün Batımı</string>
+    <string name="light_scene_mode_12">Ritim</string>
+
+    <string name="color">Renk</string>
+    <string name="light_flash_quick">Hızlı titreşim</string>
+    <string name="light_flash_slow">Yavaş titreşim</string>
+    <string name="light_flash_slower">Çok yavaş titreşim</string>
+    <string name="light_flash_music">Ritim titreşimi</string>
+    <string name="light_color_collect">Kaydedilmiş renkler</string>
+    <string name="light_flash">Renk titreşimleri</string>
+    <string name="light_flash_freq">Titreşim hızı</string>
+
+    <string name="light_model_1">Gökkuşağı titreşimi</string>
+    <string name="light_model_2">Kırmızı titreşim</string>
+    <string name="light_model_3">Turuncu titreşim</string>
+    <string name="light_model_4">Sarı titreşim</string>
+    <string name="light_model_5">Yeşil titreşim</string>
+    <string name="light_model_6">Camgöbeği titreşimi</string>
+    <string name="light_model_7">Mavi titreşim</string>
+    <string name="light_model_8">Mor titreşim</string>
+    <string name="light_color_temperature_cold">Soğuk</string>
+    <string name="light_color_temperature_warm">Sıcak</string>
+    <string name="light_color_temperature_gray">Gri</string>
+    <string name="light_color_temperature_colorful">Canlı</string>
+    <string name="light_color_temperature_dark">Karanlık</string>
+    <string name="light_color_temperature_sun">Güneşli</string>
+    <string name="light_color_temperature_cold_white">Soğuk beyaz</string>
+    <string name="light_color_temperature_natural_light">Doğal ışık</string>
+    <string name="light_color_temperature_bright">Parlak</string>
+    <string name="light_color_temperature_sunset">Gün batımı</string>
+    <string name="light_color_temperature_candlelight">Mum ışığı</string>
+
+    <!--Search Device-->
+    <string name="play_sound">Ses Çal</string>
+    <string name="close_play">Sessiz</string>
+    <string name="connected_device_time_tips">Son kullanım: şimdi</string>
+    <string name="last_time_tips">Son kullanım: %1$s</string>
+    <string name="distance_m">%1$s m</string>
+    <string name="distance_km">%1$s km</string>
+    <string name="my_location">Konumum</string>
+    <string name="search_phone">Telefonumu arıyorum</string>
+    <string name="search_device_tips">\t\tCihaz aranırken, kulaklıklar maksimum ses seviyesinde bip sesi çıkaracaktır, işitme hasarını önlemek için lütfen takmadığınızdan emin olun.</string>
+    <string name="device_no_location_info">Konum alınamıyor</string>
+    <string name="today">Bugün</string>
+    <string name="tomorrow">Yarın</string>
+    <string name="yesterday">Dün</string>
+    <string name="play_way_all">Tümünü çal</string>
+    <string name="play_way_left">Sadece sol tarafı çal</string>
+    <string name="play_way_right">Sadece sağ tarafı çal</string>
+
+    <!--    Network Radio-->
+    <string name="fm_type_local">Yerel FM</string>
+    <string name="fm_type_country">Ulusal FM</string>
+    <string name="fm_type_province">İl FM</string>
+    <string name="fm_type_mycollect">Favorilerim</string>
+    <string name="loading">Yükleniyor</string>
+    <string name="loading_failed">Yüklenemedi</string>
+    <string name="manage">Yönet</string>
+    <string name="msg_error_switch_mode">Mod değiştirilemedi</string>
+    <string name="empty_folder">Boş klasör</string>
+    <string name="empty_list_change_to_local">Mevcut çalma listesi boş, yerel FM listesine geçildi</string>
+    <string name="resource_not_available">Mevcut kaynak kullanılamıyor.</string>
+    <string name="resource_not_available_next">Mevcut kaynak kullanılamıyor, sonraki kanala ayarlanıyor</string>
+    <string name="resource_not_available_prev">Mevcut kaynak kullanılamıyor, önceki kanala ayarlanıyor</string>
+
+
+    <!--Test-->
+    <string name="test_configuration">Test yapılandırması</string>
+    <string name="save_configuration">Yapılandırmayı kaydet</string>
+    <string name="use_device_auth">Cihaz yetkilendirmesi etkinleştirilsin mi?</string>
+    <string name="support_show_product_dialog">Açılır pencere etkinleştirilsin mi?</string>
+    <string name="support_local_ota">Yerel OTA etkinleştirilsin mi?</string>
+    <string name="show_dialog_rssi_tips">Açılır pencere hassasiyeti:</string>
+    <string name="rssi_unit">dBm</string>
+    <string name="input_rssi_hint">Lütfen istenen RSSI değerini [-100~0]dBm girin</string>
+    <string name="local_ota_desc">File path is C:\\Users\\MyDevice</string>
+    <string name="test_custom_cmd">Özelleştirilmiş komut testi</string>
+    <string name="rssi_over_limit">RSSI parametresi yasal aralıkta değil</string>
+    <string name="click_again_to_test_configuration">Test yapılandırmasına girmek için lütfen tekrar dokunun</string>
+    <string name="save_configuration_success">Yapılandırma kaydedildi, uygulamadan çıkılıyor</string>
+    <string name="sound_card_eq_title">Mikrofon ses efekti</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="fitting_results">Uygulama sonuçları</string>
+    <string name="left_ear_threshold_mean">Sol işitme eşiği ortalaması</string>
+    <string name="right_ear_threshold_mean">Sağ işitme eşiği ortalaması</string>
+    <string name="written_to_the_device">Cihaza yazıldı</string>
+    <string name="make_sure_write_fitting">İşitme cihazı ayarlarının yazılacağından emin misiniz?</string>
+    <string name="keep_fitting_record">Uygulama kaydını sakla</string>
+    <string name="write_saved_successfuly">Yazma başarıyla kaydedildi</string>
+    <string name="write_saved_failed">Yazma kaydedilemedi</string>
+    <string name="db_hl">İşitme eşiği/dB HL</string>
+    <string name="freq_hz">Frekans/Hz</string>
+    <string name="left_ear">Sol kulak</string>
+    <string name="right_ear">Sağ kulak</string>
+    <string name="go_for_fitting">Uygulamaya git</string>
+    <string name="detect_hearing_impairment">İşitme kaybını tespit et</string>
+    <string name="fitting_records">Uygulama kayıtları</string>
+    <string name="back_last_step">Geri</string>
+    <string name="can_not_hear">Duyamıyorum</string>
+    <string name="hear">Duyuyorum</string>
+    <string name="restart">Yeniden Başlat</string>
+    <string name="continue_str">Devam Et</string>
+    <string name="check_no_finish_record">Tamamlanmamış bir test kaydı var. Devam etmek istiyor musunuz?</string>
+    <string name="save_operation">Evet</string>
+    <string name="no_save_operation">Hayır</string>
+    <string name="check_exitt_fitting">Bir çıkış algılandı. Bir sonraki teste devam etmek için mevcut kaydı önbelleğe almak ister misiniz?</string>
+    <string name="please_prepare_for_the_following_tests">Lütfen aşağıdaki testler için hazırlanın</string>
+    <string name="fitting_prepare_step_1">Lütfen işitme cihazınızı takın \nBaşlamak için sessiz bir yer seçin.</string>
+    <string name="fitting_prepare_step_2">Kulaklıkta \“Di \”sesini duyduğunuzda, "Duyuyorum"a tıklayın;\n Bir şey duyamıyorsanız, "Duyamıyorum"a tıklayın </string>
+    <string name="i_know_it_2">Anladım.</string>
+    <string name="fitting">Uygulama</string>
+    <string name="hearing_aid_fitting">İşitme cihazı uygulaması</string>
+    <string name="select_fitting_gain_type">Lütfen test edilecek işitme cihazını seçin.</string>
+    <string name="left_ear_single">Sol</string>
+    <string name="right_ear_single">Sağ</string>
+    <string name="both_ear_single">Her ikisi</string>
+    <string name="both_ear">İki kulak</string>
+    <string name="both_ear_fitting">İki kulak uygulaması</string>
+    <string name="left_ear_fitting">Sol kulak uygulaması</string>
+    <string name="right_ear_fitting">Sağ kulak uygulaması</string>
+    <string name="left_ear_fitting_result">Sol kulak uygulama sonuçları</string>
+    <string name="right_ear_fitting_result">Sağ kulak uygulama sonuçları</string>
+    <string name="both_ear_fitting_result">İki kulak uygulama sonuçları</string>
+    <string name="is_save_to_fitting_record">Uygulama kaydına kaydedilsin mi?</string>
+    <string name="fitting_record_too_long">Ad çok uzun. Lütfen 20 karakterle sınırlayın</string>
+
+    <!--TestExtFlashActivity-->
+    <!--<string name="test_ext_flash">FAT Dosya Sistemi Testi</string>
+    <string name="add_file_path_err">Dosya yolu istisnası, lütfen tekrar seçin</string>
+    <string name="create_file_progress">Dosya ekleniyor[%1$s],ilerleme:%2$d</string>
+    <string name="create_fat_file_success">Dosya[%1$s] başarıyla eklendi.Kullanılan Süre : %2$s, Hız:%3$.1f kb/s</string>
+    <string name="create_fat_file_failed">Dosya[%1$s] eklenemedi,neden:%2$d</string>
+    <string name="delete_fat_file_tips">Dosya[%1$s] silinsin mi?</string>
+    <string name="deleting_fat_file">Siliniyor…</string>
+    <string name="delete_fat_file_success">Dosya[%1$s] silme başarılı.Kullanılan Süre : %2$s</string>
+    <string name="delete_fat_file_failed">Dosya[%1$s] silme başarısız, neden:%2$d</string>
+    <string name="log_message">Logcat Mesajı</string>
+    <string name="recovery_fat_system">Kurtarılıyor…</string>
+    <string name="recovery_system_success">Sistem kurtarma başarılı</string>
+    <string name="recovery_system_failed">Sistem kurtarma hatası, neden : %1$d</string>
+    <string name="write_protect_begin">Yazma koruması başlıyor</string>
+    <string name="delete_fat_file_warning">2'den az fat dosyası olamaz</string>
+    <string name="updating_fat_resource">Güncelleniyor…</string>-->
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/list_item_background"
+    android:padding="16dp">
+
+    <!-- Icon for the Reciter/File -->
+    <ImageView
+        android:id="@+id/iv_device_type"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_sd_card_green" />
+
+    <!-- Name of the Reciter/File -->
+    <TextView
+        android:id="@+id/tv_device_file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_folder_arrow"
+        app:layout_constraintStart_toEndOf="@id/iv_device_type"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Abdullah Awad Al-Juhany" />
+
+    <!-- Arrow icon (for folders) -->
+    <ImageView
+        android:id="@+id/iv_folder_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- Selection Circle (for files) -->
+    <ImageView
+        android:id="@+id/iv_file_selector"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_radio_button_unchecked" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
